@@ -79,7 +79,7 @@
     </nav>
 
     <!-- Header -->
-    <header style="margin-top: 50px;
+    <!--<header style="margin-top: 50px;
     background-image: url(img/background2.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -103,42 +103,75 @@
                 </div>
             </div>
         </div>
-    </header>
+    </header>-->
 
-    <!-- About Section -->
-    <section class="success" id="about">
-            <div class="container">                
+    <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
+        <!-- Overlay -->
+        <div class="overlay"></div>
+      
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#bs-carousel" data-slide-to="1"></li>
+          <li data-target="#bs-carousel" data-slide-to="2"></li>
+          <li data-target="#bs-carousel" data-slide-to="3"></li>
+        </ol>
+        
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item slides active">
+            <div class="slide-1"></div>
+            <div class="hero">
                 <div class="row">
-                    <div class="col-lg-4 col-lg-offset-1">
-                        <h5>Fines y objetivos</h5>
-                        <hr>
-                        <ol>
-                            <li>Optimizar la calidad de atención y cuidado de los pacientes con enfermedades del colon, recto y ano.</li>
-                            <li>Proveer el mecanismo para la preparación, discusión e intercambio de información relacionada con enfermedades del colon, recto y ano.</li>
-                            <li>Promover el entrenamiento y educación de los cirujanos en enfermedades del colon, recto y ano.</li>
-                            <li>Promover la investigación científica para determinar las causas, naturaleza y el mejor tratamiento de las enfermedades del colon, recto y ano.</li>
-                            <li>Implementar la educación médica continua de los cirujanos de colon y recto.</li>
-                            <li>Promover la educación sanitaria del público en relación con enfermedades del colon, recto y ano.</li>
-                            <li>Promover la realización de servicios de colon y recto en centros e instituciones médicas.</li>
-                        </ol>
-                    </div>
-                    <div class="col-lg-4 col-lg-offset-2">
-                            <h5>Historia</h5>
-                            <hr>
-                            <p style="font-size: 15px;">El 4 de junio de 1994, se reunieron los doctores Julio Pineda, Carlos Pineda, Héctor Enríquez, Mario Hernández y José Rigoberto Pellecer, donde realizaron el acta constitutiva para la creación de la Asociación. Se iniciaron los trámites legales quedando la publicación en el diario oficial el día 25 de abril de 1997.  Desde la primera reunión en 1994, hubo reuniones científicas y nuevos ingresos a la Asociación de otros Cirujanos Colorectales, Generales y sub especialistas de otras ramas con influencia en la Coloproctología. Además, el 30 de agosto de 1994 se develó una placa conmemorativa en honor al Dr. Carlos Azpuru (pionero de la Coloproctología en Guatemala) y se nombró así la Unidad de Coloproctología del Hospital General San Juan de Dios.
-
-                                    La primera Junta Directiva, desde el 4 de junio de 1994 fue constituida por los doctores Julio Pineda (presidente), José Rigoberto Pellicer (vicepresidente), Héctor Enríquez (Secretario) y Mario Hernández (Vocal). Posteriormente, ya con los estatutos publicados e impresos y con una actividad mensual.</p>
-                    </div>
-                    <div class="col-lg-8 col-lg-offset-2 text-center">
-                        <a href="#" class="btn btn-lg btn-outline">
-                            <i class="fa fa-users"></i> Miembros
-                        </a>
+                    <div class="col-lg-12">                    
+                        <div class="intro-text">
+                            <div class="row">
+                                <div class="col-lg-6" style="margin-top:25px; z-index: 999999;">
+                                    <span class="name text-shadow">ASOCIACIÓN DE CIRUJANOS DE COLON Y RECTO DE GUATEMALA</span>        
+                                </div>
+                                <div class="col-lg-6" style="background: rgba(0,0,0,0.4); padding-top: 20px; padding-bottom: 20px;">
+                                    <h4>Quienes Somos</h4>
+                                    <hr class="star-light"> 
+                                    <p class="skills"> <i> Es una entidad para el beneficio de la humanidad en la promoción del avance de la ciencia y el arte del diagnóstico y tratamiento médico y quirúrgico de las enfermedades del colon, recto y ano, promoviendo la práctica de la misma en forma competente y ética. La asociación es una entidad sin fines lucrativos y es ajena a toda actividad política y religiosa. Está constituida y regida al amparo de las leyes de la República de Guatemala. 
+                                    <br> Está integrada por médicos especialistas en Cirugía Colorectal, Cirujanos Generales con interés en la Cirugía Colorectal, asociados correspondientes (médicos de otras especialidades relacionadas con las enfermedades del colon, recto y ano) y socios honorarios.</i></p>
+                                </div>
+                            </div>                                                                       
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
+          </div>
+          <div class="item slides">
+            <div class="slide-2"></div>
+            <div class="hero">        
+              <hgroup>
+                  <h1>Good News</h1>        
+                  <h3>Get start your next awesome information</h3>
+              </hgroup>                     
+            </div>
+          </div>
+          <div class="item slides">
+            <div class="slide-3"></div>
+            <div class="hero">        
+              <hgroup>
+                <h1>Good News</h1>               
+                <h3>Get start your next awesome information</h3>
+            </hgroup>  
+            </div>
+          </div>
+          <div class="item slides">
+            <div class="slide-4"></div>
+            <div class="hero">        
+                <hgroup>
+                    <h1>Good News</h1>         
+                    <h3>Get start your next awesome information</h3>
+                </hgroup>  
+            </div>
+          </div>
+        </div> 
+      </div>
 
-    <!-- Portfolio Grid Section -->
+      <!-- Portfolio Grid Section -->
     <section id="portfolio">
         <div class="container">
             <div class="row">
@@ -211,6 +244,39 @@
             </div>
         </div>
     </section>
+
+    <!-- About Section -->
+    <section class="success" id="about">
+            <div class="container">                
+                <div class="row">
+                    <div class="col-lg-4 col-lg-offset-1">
+                        <h5>Fines y objetivos</h5>
+                        <hr>
+                        <ol>
+                            <li>Optimizar la calidad de atención y cuidado de los pacientes con enfermedades del colon, recto y ano.</li>
+                            <li>Proveer el mecanismo para la preparación, discusión e intercambio de información relacionada con enfermedades del colon, recto y ano.</li>
+                            <li>Promover el entrenamiento y educación de los cirujanos en enfermedades del colon, recto y ano.</li>
+                            <li>Promover la investigación científica para determinar las causas, naturaleza y el mejor tratamiento de las enfermedades del colon, recto y ano.</li>
+                            <li>Implementar la educación médica continua de los cirujanos de colon y recto.</li>
+                            <li>Promover la educación sanitaria del público en relación con enfermedades del colon, recto y ano.</li>
+                            <li>Promover la realización de servicios de colon y recto en centros e instituciones médicas.</li>
+                        </ol>
+                    </div>
+                    <div class="col-lg-4 col-lg-offset-2">
+                            <h5>Historia</h5>
+                            <hr>
+                            <p style="font-size: 15px;">El 4 de junio de 1994, se reunieron los doctores Julio Pineda, Carlos Pineda, Héctor Enríquez, Mario Hernández y José Rigoberto Pellecer, donde realizaron el acta constitutiva para la creación de la Asociación. Se iniciaron los trámites legales quedando la publicación en el diario oficial el día 25 de abril de 1997.  Desde la primera reunión en 1994, hubo reuniones científicas y nuevos ingresos a la Asociación de otros Cirujanos Colorectales, Generales y sub especialistas de otras ramas con influencia en la Coloproctología. Además, el 30 de agosto de 1994 se develó una placa conmemorativa en honor al Dr. Carlos Azpuru (pionero de la Coloproctología en Guatemala) y se nombró así la Unidad de Coloproctología del Hospital General San Juan de Dios.
+
+                                    La primera Junta Directiva, desde el 4 de junio de 1994 fue constituida por los doctores Julio Pineda (presidente), José Rigoberto Pellicer (vicepresidente), Héctor Enríquez (Secretario) y Mario Hernández (Vocal). Posteriormente, ya con los estatutos publicados e impresos y con una actividad mensual.</p>
+                    </div>
+                    <div class="col-lg-8 col-lg-offset-2 text-center">
+                        <a href="#" class="btn btn-lg btn-outline">
+                            <i class="fa fa-users"></i> Miembros
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>    
 
     <!-- Estatutos -->
     <section class="success" id="estatutos">
