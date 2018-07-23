@@ -581,3 +581,89 @@ Image credits: unsplash.com
 @media screen and (max-width: 640px){
     .hero h1 { font-size: 4em; }    
 }
+
+.card {
+    box-shadow: 0 1px 2px rgba(0,0,0,.075);
+    margin-bottom: 2.3rem;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    color: #385688;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #FFF;
+    background-clip: border-box;
+    border: 1px solid transparent;
+    border-radius: 2px;
+}
+
+@media (min-width: 768px) {
+.profile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+}
+
+@media (max-width: 767.98px) {
+.profile__img img {
+    margin: -55px 0 -10px;
+    width: 120px;
+    border: 5px solid #FFF;
+    border-radius: 50%;
+}
+
+.profile {
+    margin-top: 75px;
+    text-align: center;
+}
+}
+
+.card, .card-deck {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+}
+
+.profile__img {
+    padding: 5px;
+    position: relative;
+}
+
+.profile__img img {
+    max-width: 200px;
+    border-radius: 2px;
+}
+
+.profile__info {
+    padding: 30px;
+}
+
+.icon-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.icon-list>li {
+    position: relative;
+    padding: .3rem 0;
+}
+
+.nav.nav-tabs.nav-pills a {
+    color: #fff;
+}
+
+.nav.nav-tabs.nav-pills > li:not(.active) a:hover {
+    color: #385688;
+}
