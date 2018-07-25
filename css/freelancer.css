@@ -182,7 +182,7 @@ section.success {
 
 section.success a {
     color: #fff !important;
-    background: #8291B0 !important;
+    background: #8291B0;
 }
 
 @media(max-width:767px) {
