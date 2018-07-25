@@ -13,6 +13,7 @@
 
     <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-dropdownhover.min.css">
 
     <!-- Custom CSS -->
     <link href="css/freelancer.css" rel="stylesheet">
@@ -35,64 +36,58 @@
 
     <!-- Navigation -->
     <div class="container">
-    <nav class="navbar navbar-default navbar-fixed-top">
-        
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand hidden-xs" href="/#page-top">
-                    <img src="img/logo.png" alt="accrg" class="logo">
-                </a>
-            </div>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand hidden-xs" href="#page-top">
+                        <img src="img/logo.png" alt="accrg" class="logo">
+                    </a>
+                </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right" style="margin-right: 10px;">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>                    
-                    
-                    <li class="page-scroll">
-                            <a href="/#portfolio">Multimedia</a>
-                        </li>  
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right" style="margin-right: 10px;">
+                        <li class="hidden">
+                            <a href="#" data-to="#page-top"></a>
+                        </li>                                        
                         <li class="page-scroll">
-                                <a href="/#about">Quienes somos</a>
-                            </li>                                               
-                    <li class="page-scroll">
-                            <a href="/#estatutos">Noticias y Avisos</a>
+                            <a href="#" data-to="#portfolio">Inicio</a>
+                        </li>  
+                        <li class="page-scroll dropdown">
+                            <a href="#" data-to="#about" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Quienes somos <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li role="separator" class="divider"></li>
+                                <li><a href="pdf/Estatutos.pdf" target="_blank">Estatutos (PDF)</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="/members.html">Miembros de la Asocicaci&oacute;n</a></li>                                                                                                      
+                                <li role="separator" class="divider"></li>
+                            </ul>
+                        </li>                                               
+                        <li class="page-scroll">
+                            <a href="#" data-to="#estatutos">Noticias</a>
                         </li>
                         <li class="page-scroll">
-                                <a href="/#enlaces">Enlaces</a>
-                            </li>    
-                    <li class="page-scroll">
-                        <a href="/#contact">Cont&aacute;ctenos</a>
-                    </li>
-                    <li class="page-scroll dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">M&aacute;s <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                              <li role="separator" class="divider"></li>
-                              <li><a href="pdf/Estatutos.pdf" target="_blank">Estatutos (PDF)</a></li>
-                              <li role="separator" class="divider"></li>
-                              <li><a href="#">Miembros de la Asocicaci&oacute;n</a></li>                                                                                                      
-                            </ul>
-                          </li>
-                </ul>
-            </div>
+                            <a href="#" data-to="#enlaces">Enlaces</a>
+                        </li>    
+                        <li class="page-scroll">
+                            <a href="#" data-to="#contact">Cont&aacute;ctenos</a>
+                        </li>                        
+                    </ul>
+                </div>
             <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
+            </div>
+        </nav>
+    <!-- /.container-fluid -->
+    </div>   
 
-   
-    
-
-    
-      <!-- Portfolio Grid Section -->
+    <!-- Portfolio Grid Section -->
     <section id="portfolio" class="success" style="margin-top: 50px;">
         <div class="container">
             <div class="row">
@@ -450,7 +445,8 @@
     <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->    
-    <script src="js/bootstrap.js"></script>    
+    <script src="js/bootstrap.js"></script> 
+    <script src="js/bootstrap-dropdownhover.min.js"></script>       
 
     <!-- Plugin JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>

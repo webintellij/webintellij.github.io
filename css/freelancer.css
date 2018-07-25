@@ -22,7 +22,7 @@ a:focus,
 a:active,
 a.active {
     outline: 0;
-    color: rgb(202, 176, 26);
+    color: rgb(56, 86, 136);
 }
 
 h1,
@@ -84,31 +84,38 @@ header img {
     margin: 0 auto 20px;
 }
 
-header .intro-text .name {
-    display: block;
+.intro-text {
+    display: table !important;    
+    height: 100vh;
+}
+
+.hero .intro-text .name,
+.hero .intro-text .description {
+    display: table-cell !important;
+    margin: 0;                
+    vertical-align: middle !important;
+}
+
+.hero .intro-text .name {    
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 1.8em;
     font-weight: 700;
 }
 
-header .intro-text .skills {
-    font-size: 1.1em;
-    font-weight: 300;
+.hero .intro-text .description {
+    font-size: 1em;
+    font-weight: 200;
 }
 
-@media(min-width:768px) {
-    header .container {
-        padding-top: 200px;
-        padding-bottom: 100px;
+@media(max-width:768px) {    
+
+    .hero .intro-text .name {
+        font-size: 1.2em;
     }
 
-    header .intro-text .name {
-        font-size: 4em;
-    }
-
-    header .intro-text .skills {
-        font-size: 1em;
+    .hero .intro-text .description {
+        font-size: .8em;
     }
 }
 
@@ -171,6 +178,11 @@ section h2 {
 section.success {
     color: #fff;
     background: #8291B0;
+}
+
+section.success a {
+    color: #fff !important;
+    background: #8291B0 !important;
 }
 
 @media(max-width:767px) {
@@ -440,11 +452,16 @@ footer .footer-below {
 
 
 .logo {
-    position: absolute; top: 0; left: 0; width: 112px;
+    position: absolute; top: 2px; width: 110px;  
+    -webkit-transition: width .3s;
+    -moz-transition: width .3s;
+    -ms-transition: width .3s;
+    -o-transition: width .3s;
+    transition: width .3s;  
 }
 
 .navbar-fixed-top.navbar-shrink .logo {
-    position: absolute; top: 0; left: 0; width: 82px !important;
+    width: 80px !important;       
 }
 
 /*
@@ -494,9 +511,10 @@ Image credits: unsplash.com
               transform: translate3d(-50%,-50%,0);
 }
 .hero h1 {
-    font-size: 6em;    
+    font-size: 3em;    
     font-weight: bold;
     margin: 0;
+    margin-bottom: 20px;
     padding: 0;
 }
 
@@ -560,10 +578,11 @@ Image credits: unsplash.com
     background-image: url(../img/background2.jpg);
     background-repeat: no-repeat;
     background-position: center;
+    background-position-y: 60px;
     background-size: cover;
 }
 .fade-carousel .slides .slide-2 {
-  background-image: url(../img/slide2.jpeg); 
+  background-image: url(../img/slide2.jpeg);
 }
 .fade-carousel .slides .slide-3 {
   background-image: url(../img/slide3.jpeg);
@@ -579,7 +598,7 @@ Image credits: unsplash.com
     .hero { width: 980px; }    
 }
 @media screen and (max-width: 640px){
-    .hero h1 { font-size: 4em; }    
+    .hero h1 { font-size: 2em; }    
 }
 
 .card {
@@ -667,3 +686,19 @@ Image credits: unsplash.com
 .nav.nav-tabs.nav-pills > li:not(.active) a:hover {
     color: #385688;
 }
+
+.shadow-info {
+    background: rgba(0,0,0,0.4); 
+    padding: 20px;    
+}
+
+.truncate {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+.about {
+    text-align: justify;
+}  

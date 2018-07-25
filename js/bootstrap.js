@@ -1843,7 +1843,7 @@ if (typeof jQuery === 'undefined') {
       .find(this.selector)
       .map(function () {
         var $el   = $(this)
-        var href  = $el.data('target') || $el.attr('href')
+        var href  = $el.data('target') || $el.attr('data-to')
         var $href = /^#./.test(href) && $(href)
 
         return ($href
@@ -1895,7 +1895,7 @@ if (typeof jQuery === 'undefined') {
 
     var selector = this.selector +
         '[data-target="' + target + '"],' +
-        this.selector + '[href="' + target + '"]'
+        this.selector + '[data-to="' + target + '"]'
 
     var active = $(selector)
       .parents('li')

@@ -13,6 +13,7 @@
 
     <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-dropdownhover.min.css">
 
     <!-- Custom CSS -->
     <link href="css/freelancer.css" rel="stylesheet">
@@ -35,58 +36,56 @@
 
     <!-- Navigation -->
     <div class="container">
-    <nav class="navbar navbar-default navbar-fixed-top">
-        
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand hidden-xs" href="#page-top">
-                    <img src="img/logo.png" alt="accrg" class="logo">
-                </a>
-            </div>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand hidden-xs" href="#page-top">
+                        <img src="img/logo.png" alt="accrg" class="logo">
+                    </a>
+                </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right" style="margin-right: 10px;">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>                    
-                    
-                    <li class="page-scroll">
-                            <a href="#portfolio">Multimedia</a>
-                        </li>  
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right" style="margin-right: 10px;">
+                        <li class="hidden">
+                            <a href="#" data-to="#page-top"></a>
+                        </li>                                        
                         <li class="page-scroll">
-                                <a href="#about">Quienes somos</a>
-                            </li>                                               
-                    <li class="page-scroll">
-                            <a href="#estatutos">Noticias y Avisos</a>
+                            <a href="#" data-to="#portfolio">Inicio</a>
+                        </li>  
+                        <li class="page-scroll dropdown">
+                            <a href="#" data-to="#about" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Quienes somos <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li role="separator" class="divider"></li>
+                                <li><a href="pdf/Estatutos.pdf" target="_blank">Estatutos (PDF)</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="/members.html">Miembros de la Asocicaci&oacute;n</a></li>                                                                                                      
+                                <li role="separator" class="divider"></li>
+                            </ul>
+                        </li>                                               
+                        <li class="page-scroll">
+                            <a href="#" data-to="#estatutos">Noticias</a>
                         </li>
                         <li class="page-scroll">
-                                <a href="#enlaces">Enlaces</a>
-                            </li>    
-                    <li class="page-scroll">
-                        <a href="#contact">Cont&aacute;ctenos</a>
-                    </li>
-                    <li class="page-scroll dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">M&aacute;s <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                              <li role="separator" class="divider"></li>
-                              <li><a href="pdf/Estatutos.pdf" target="_blank">Estatutos (PDF)</a></li>
-                              <li role="separator" class="divider"></li>
-                              <li><a href="/members.html">Miembros de la Asocicaci&oacute;n</a></li>                                                                                                      
-                            </ul>
-                          </li>
-                </ul>
-            </div>
+                            <a href="#" data-to="#enlaces">Enlaces</a>
+                        </li>    
+                        <li class="page-scroll">
+                            <a href="#" data-to="#contact">Cont&aacute;ctenos</a>
+                        </li>                        
+                    </ul>
+                </div>
             <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
+            </div>
+        </nav>
+    <!-- /.container-fluid -->
+    </div>    
 
     <!-- Header -->
     <!--<header style="margin-top: 50px;
@@ -115,7 +114,7 @@
         </div>
     </header>-->
 
-    <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
+    <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="40000" id="bs-carousel">
         <!-- Overlay -->
         <div class="overlay"></div>
       
@@ -131,25 +130,20 @@
         <div class="carousel-inner">
           <div class="item slides active">
             <div class="slide-1"></div>
-            <div class="hero">                 
-                <div class="row">
-                    <div class="col-lg-6" style="margin-top:200px;">
-                        <h3 class="name text-shadow">ASOCIACIÓN DE CIRUJANOS DE COLON Y RECTO DE GUATEMALA</h3>        
-                    </div>
-                    <div class="col-lg-6" style="background: rgba(0,0,0,0.4); padding-top: 20px; padding-bottom: 20px; font-size:12px:">
-                        <h5>Quienes Somos</h5>
-                        <hr class="star-light"> 
-                        <p class="skills" style="font-size: 14px;"> <i> Es una entidad para el beneficio de la humanidad en la promoción del avance de la ciencia y el arte del diagnóstico y tratamiento médico y quirúrgico de las enfermedades del colon, recto y ano, promoviendo la práctica de la misma en forma competente y ética. La asociación es una entidad sin fines lucrativos y es ajena a toda actividad política y religiosa. Está constituida y regida al amparo de las leyes de la República de Guatemala. 
-                        <br> Está integrada por médicos especialistas en Cirugía Colorectal, Cirujanos Generales con interés en la Cirugía Colorectal, asociados correspondientes (médicos de otras especialidades relacionadas con las enfermedades del colon, recto y ano) y socios honorarios.</i></p>
-                    </div>
-                </div>                                                                                               
+            <div class="hero">  
+                <hgroup class="page-scroll">
+                    <h1>ASOCIACIÓN DE CIRUJANOS DE COLON Y RECTO DE GUATEMALA</h1>
+                    <!--<h3 class="small truncate">Es una entidad para el beneficio de la humanidad en la promoción del avance de la ciencia y el arte del diagnóstico y tratamiento médico y quirúrgico de las enfermedades del colon, recto y ano, promoviendo la práctica de la misma en forma competente y ética. La asociación es una entidad sin fines lucrativos y es ajena a toda actividad política y religiosa. Está constituida y regida al amparo de las leyes de la República de Guatemala. 
+                             Está integrada por médicos especialistas en Cirugía Colorectal, Cirujanos Generales con interés en la Cirugía Colorectal, asociados correspondientes (médicos de otras especialidades relacionadas con las enfermedades del colon, recto y ano) y socios honorarios.</h3>-->
+                    <a href="#" data-to="#about" class="btn btn-primary btn-lg">Leer m&aacute;s</a>                             
+                </hgroup>                                                                                                                    
             </div>
           </div>
           <div class="item slides">
             <div class="slide-2"></div>
-            <div class="hero">        
+            <div class="hero">       
               <hgroup>
-                  <h1>Good News</h1>        
+                  <h1>Good News</h1>
                   <h3>Get start your next awesome information</h3>
               </hgroup>                     
             </div>
@@ -190,7 +184,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Multimedia</h2>
+                    <h2>Galeria</h2>
                     <hr class="star-primary">
                 </div>
             </div>
@@ -260,10 +254,71 @@
     </section>
 
     <!-- About Section -->
-    <section class="success" id="about">
+    <section id="about" class="success">
             <div class="container">                
                 <div class="row">
-                    <div class="col-lg-4 col-lg-offset-1">
+                    <div class="col-lg-12 text-center">
+                        <h2>Quienes somos</h2>
+                        <hr class="star-light">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-10 col-lg-offset-1">
+                        <p class="about">La Asociación de Cirujanos de Colon y Recto de Guatemala es una entidad para el beneficio de la humanidad en la promoción del avance de la ciencia y el arte del diagnóstico y tratamiento médico y quirúrgico de las enfermedades del colon, recto y ano, promoviendo la práctica de la misma en forma competente y ética. La asociación es una 
+                                entidad sin fines lucrativos y es ajena a toda actividad política y religiosa. Está constituida y regida al amparo de las leyes de la República de Guatemala. 
+                                
+                                Está integrada por médicos especialistas en Cirugía Colorectal, Cirujanos Generales con interés en la Cirugía Colorectal, asociados correspondientes (médicos de otras especialidades relacionadas con las enfermedades del colon, recto y ano) y socios honorarios.</p>
+                    </div>
+                </div>
+                <div class="row">
+                        <div class="col-lg-12 text-center">
+                                <h3>Junta Directiva 2016-2018</h3>
+                                <hr class="star-light">
+                            </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-5 col-lg-offset-1">                                                                                
+                        <div class="profile__info text-center">
+                            <h4>Dr. José A. Perdomo</h4>
+                            <h5>Presidente</h5>
+                            <a href="mailto:antonio50287@yahoo.com">antonio50287@yahoo.com</a>                            
+                        </div>
+                    </div>
+                    <div class="col-lg-5">                                                                                    
+                        <div class="profile__info text-center">
+                            <h4>Dr. Julio César Morales</h4>
+                            <h5>Vice-Presidente</h5>
+                            <a href="mailto:labryjcm@gmail.com">labryjcm@gmail.com</a>                            
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-lg-offset-1">                                                                                    
+                        <div class="profile__info text-center">
+                            <h4>Dr. Marco A. Bocaletti</h4>
+                            <h5>Secretario</h5>
+                            <a href="mailto:docboca@yahoo.com">docboca@yahoo.com</a>                            
+                        </div>
+                    </div>
+                    <div class="col-lg-5">                                                                                    
+                        <div class="profile__info text-center">
+                            <h4>Dr. Manuel García Girón</h4>
+                            <h5>Vocal</h5>
+                            <a href="mailto:manuelgarciagiron@gmail.com">manuelgarciagiron@gmail.com</a>                        
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-lg-offset-1">
+                        <div class="text-center">
+                            <h4>Dr. Luis Lujan</h4>
+                            <h5>Tesorero</h5>                                                                                                                                                         
+                            <a href="mailto:drllujan@gmail.com">drllujan@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                </section>
+                <section>
+                    <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-lg-offset-1" style="margin-top: 25px;">
                         <h5>Fines y objetivos</h5>
                         <hr>
                         <ol>
@@ -276,7 +331,7 @@
                             <li>Promover la realización de servicios de colon y recto en centros e instituciones médicas.</li>
                         </ol>
                     </div>
-                    <div class="col-lg-4 col-lg-offset-2">
+                    <div class="col-lg-4 col-lg-offset-2"  style="margin-top: 25px;">
                             <h5>Historia</h5>
                             <hr>
                             <p style="font-size: 15px;">El 4 de junio de 1994, se reunieron los doctores Julio Pineda, Carlos Pineda, Héctor Enríquez, Mario Hernández y José Rigoberto Pellecer, donde realizaron el acta constitutiva para la creación de la Asociación. Se iniciaron los trámites legales quedando la publicación en el diario oficial el día 25 de abril de 1997.  Desde la primera reunión en 1994, hubo reuniones científicas y nuevos ingresos a la Asociación de otros Cirujanos Colorectales, Generales y sub especialistas de otras ramas con influencia en la Coloproctología. Además, el 30 de agosto de 1994 se develó una placa conmemorativa en honor al Dr. Carlos Azpuru (pionero de la Coloproctología en Guatemala) y se nombró así la Unidad de Coloproctología del Hospital General San Juan de Dios.
@@ -284,7 +339,7 @@
                                     La primera Junta Directiva, desde el 4 de junio de 1994 fue constituida por los doctores Julio Pineda (presidente), José Rigoberto Pellicer (vicepresidente), Héctor Enríquez (Secretario) y Mario Hernández (Vocal). Posteriormente, ya con los estatutos publicados e impresos y con una actividad mensual.</p>
                     </div>
                     <div class="col-lg-8 col-lg-offset-2 text-center">
-                        <a href="/members.html" class="btn btn-lg btn-outline">
+                        <a href="/members.html" class="btn btn-lg btn-primary">
                             <i class="fa fa-users"></i> Miembros
                         </a>
                     </div>
@@ -303,15 +358,22 @@
             </div>               
                 <div class="row">                        
                                 <div class="col-lg-4 col-md-4">
-                                    <div class="thumbnail">
-                                      <div class="text-center">
-                                        <span class="glyphicon glyphicon-send fx"></span>
-                                      </div>
+                                    <div class="thumbnail">                                      
                                       <div class="caption">
-                                        <h3>Thumbnail New</h3>
+                                        <h3>Proximo evento</h3>
+                                        <img src="img/events/event2.jpeg" class="img-thumbnail" alt="Cinque Terre">
                                         <p class="small">
-                                            Robot ipsum datus scan amet, constructor ad ut splicing elit, sed do errus mod tempor in conduit ut laboratory et deplore electromagna aliqua. Ut enim ad minimum veniam, quis no indestruct exoform ullamco laboris nisi ut alius equip ex ea commando evaluant. Duis ex machina aute ire dolorus in scan detectus an voluptate volt esse cesium dolore eu futile nulla parameter. Execute primus sint occaecat cupidatat non proident, sunt in culpa qui technia deserunt mondus anim id est proceus.  
+                                            Robot ipsum datus scan amet, constructor ad ut splicing elit, sed do errus mod tempor in conduit ut laboratory et deplore electromagna aliqua. Ut enim ad minimum veniam, quis no indestruct exoform ullamco laboris nisi ut alius equip ex ea commando evaluant. Duis ex machina aute ire dolorus in scan detectus an voluptate volt esse cesium dolore eu futile nulla parameter. Execute primus sint occaecat cupidatat non proident, sunt in culpa qui technia deserunt mondus anim id est proceus.
                                         </p>
+                                        <p><a href="#" class="btn btn-primary" role="button">Leer m&aacute;s</a> </p>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4">
+                                    <div class="thumbnail">                                      
+                                      <div class="caption">
+                                        <h3>Proximo evento</h3>
+                                        <img src="img/events/event3.jpeg" class="img-thumbnail" alt="Cinque Terre">
                                         <p class="small">
                                             Robot ipsum datus scan amet, constructor ad ut splicing elit, sed do errus mod tempor in conduit ut laboratory et deplore electromagna aliqua. Ut enim ad minimum veniam, quis no indestruct exoform ullamco laboris nisi ut alius equip ex ea commando evaluant. Duis ex machina aute ire dolorus in scan detectus an voluptate volt esse cesium dolore eu futile nulla parameter. Execute primus sint occaecat cupidatat non proident, sunt in culpa qui technia deserunt mondus anim id est proceus.
                                         </p>
@@ -321,28 +383,10 @@
                                 </div>
                                 <div class="col-lg-4 col-md-4">
                                     <div class="thumbnail">
-                                      <div class="text-center">
-                                        <span class="glyphicon glyphicon-gift fx"></span>
-                                      </div>
                                       <div class="caption">
-                                        <h3>Thumbnail New</h3>
-                                        <p class="small">
-                                            Robot ipsum datus scan amet, constructor ad ut splicing elit, sed do errus mod tempor in conduit ut laboratory et deplore electromagna aliqua. Ut enim ad minimum veniam, quis no indestruct exoform ullamco laboris nisi ut alius equip ex ea commando evaluant. Duis ex machina aute ire dolorus in scan detectus an voluptate volt esse cesium dolore eu futile nulla parameter. Execute primus sint occaecat cupidatat non proident, sunt in culpa qui technia deserunt mondus anim id est proceus.
-                                        </p>
-                                        <p class="small">
-                                            Robot ipsum datus scan amet, constructor ad ut splicing elit, sed do errus mod tempor in conduit ut laboratory et deplore electromagna aliqua. Ut enim ad minimum veniam, quis no indestruct exoform ullamco laboris nisi ut alius equip ex ea commando evaluant. Duis ex machina aute ire dolorus in scan detectus an voluptate volt esse cesium dolore eu futile nulla parameter. Execute primus sint occaecat cupidatat non proident, sunt in culpa qui technia deserunt mondus anim id est proceus.
-                                        </p>
-                                        <p><a href="#" class="btn btn-primary" role="button">Leer m&aacute;s</a> </p>
-                                      </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-4">
-                                    <div class="thumbnail">
-                                      <div class="text-center">
-                                        <span class="glyphicon glyphicon-hdd fx"></span>
-                                      </div>
-                                      <div class="caption">
-                                        <h3>Thumbnail New</h3>
+                                        <h3>Proximo evento</h3>                                        
+                                        <img src="img/events/event1.jpeg" class="img-thumbnail" alt="Cinque Terre">
+                                        <br>
                                         <p class="small">
                                             Robot ipsum datus scan amet, constructor ad ut splicing elit, sed do errus mod tempor in conduit ut laboratory et deplore electromagna aliqua. Ut enim ad minimum veniam, quis no indestruct exoform ullamco laboris nisi ut alius equip ex ea commando evaluant. Duis ex machina aute ire dolorus in scan detectus an voluptate volt esse cesium dolore eu futile nulla parameter. Execute primus sint occaecat cupidatat non proident, sunt in culpa qui technia deserunt mondus anim id est proceus.
                                         </p>
@@ -450,7 +494,7 @@
                             </div>
                         </div>
                     </form>
-                </div>
+                </div>                
             </div>
         </div>
     </section>
@@ -475,7 +519,7 @@
                             <h3>Sobre ACCRG</h3>
                             <div> ASOCIACIÓN DE CIRUJANOS DE COLON Y RECTO DE GUATEMALA </div>
                             <div> Ciudad de Guatemala, Guatemla - Tel: 31960706 </div>
-                            <div> contactenos@accrg.net </div>                            
+                            <div> colonyrectodeguatemala@gmail.com </div>                            
                     </div>
                 </div>
             </div>
@@ -485,7 +529,7 @@
                 <div class="row">
                     <div class="col-lg-12">                        
                         <div>Copyright &copy; ACCRG 2018</div>
-                        <div> contactenos@accrg.net </div>
+                        <div> colonyrectodeguatemala@gmail.com </div>
                     </div>
                 </div>
             </div>
@@ -631,7 +675,8 @@
     <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->    
-    <script src="js/bootstrap.js"></script>    
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap-dropdownhover.min.js"></script>    
 
     <!-- Plugin JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
