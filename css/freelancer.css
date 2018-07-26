@@ -47,7 +47,8 @@ hr.star-primary {
 }
 
 hr.star-light {
-    border-color: #fff;
+    /*border-color: #fff;*/
+    border-color: #F7E78C;
 }
 
 hr.star-light:after {
@@ -56,7 +57,8 @@ hr.star-light:after {
 }
 
 hr.star-primary {
-    border-color: #385688;
+    /*border-color: #385688;*/
+    border-color: #F7E78C;
 }
 
 hr.star-primary:after {
@@ -177,12 +179,12 @@ section h2 {
 
 section.success {
     color: #fff;
-    background: #8291B0;
+    background: #385688;
 }
 
 section.success a {
     color: #fff !important;
-    background: #8291B0;
+    background: #385688;
 }
 
 @media(max-width:767px) {
@@ -336,7 +338,7 @@ footer h3 {
 
 footer .footer-above {
     padding-top: 50px;
-    background-color: #385688;
+    background-color: #8291B0;
 }
 
 footer .footer-col {
@@ -728,4 +730,9 @@ Image credits: unsplash.com
     background-position: center;    
     background-size: contain;
     height: 50px;
+}
+
+.name-strong {
+    color: black;
+    font-weight: 250;
 }
