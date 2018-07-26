@@ -155,74 +155,88 @@
 
     <!-- Portfolio Grid Section -->
     <section id="portfolio">
-        <div class="container">
+        <div class="container">            
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2>Galeria</h2>
                     <hr class="star-primary">
                 </div>
             </div>
-            <div class="row">
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
+            <div id="custom-carousel-gallery" class="carousel slide card-slide" data-ride="carousel">
+                <div class="carousel-inner row" style="width: 100%; margin: 0 auto !important;">
+                    <div class="item active">                
+                    <div class="col-sm-4 portfolio-item">
+                        <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-search-plus fa-3x"></i>
+                                </div>
                             </div>
-                        </div>
-                        <img src="img/pic/1.jpg" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
+                            <img src="img/pic/1.jpg" class="img-responsive" alt="">
+                        </a>
+                    </div>
+                    <div class="col-sm-4 portfolio-item">
+                        <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-search-plus fa-3x"></i>
+                                </div>
                             </div>
-                        </div>
-                        <img src="img/pic/4.jpg" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
+                            <img src="img/pic/4.jpg" class="img-responsive" alt="">
+                        </a>
+                    </div>
+                    <div class="col-sm-4 portfolio-item">
+                        <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-search-plus fa-3x"></i>
+                                </div>
                             </div>
-                        </div>
-                        <img src="img/pic/3.jpg" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
+                            <img src="img/pic/3.jpg" class="img-responsive" alt="">
+                        </a>
+                    </div>
+                    </div>
+                    <div class="item">
+                    <div class="col-sm-4 portfolio-item">
+                        <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-search-plus fa-3x"></i>
+                                </div>
                             </div>
-                        </div>
-                        <img src="img/pic/2.jpg" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
+                            <img src="img/pic/2.jpg" class="img-responsive" alt="">
+                        </a>
+                    </div>
+                    <div class="col-sm-4 portfolio-item">
+                        <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-search-plus fa-3x"></i>
+                                </div>
                             </div>
-                        </div>
-                        <img src="img/pic/5.jpg" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
+                            <img src="img/pic/5.jpg" class="img-responsive" alt="">
+                        </a>
+                    </div>
+                    <div class="col-sm-4 portfolio-item">
+                        <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-search-plus fa-3x"></i>
+                                </div>
                             </div>
-                        </div>
-                        <img src="img/pic/6.jpg" class="img-responsive" alt="">
-                    </a>
+                            <img src="img/pic/6.jpg" class="img-responsive" alt="">
+                        </a>
+                    </div>
                 </div>
+                </div>
+                <a class="left carousel-control" href="#custom-carousel-gallery" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#custom-carousel-gallery" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
             </div>
         </div>
     </section>
@@ -391,22 +405,22 @@
             <div class="row">
                 <div class="col-lg-4 col-lg-offset-1">
                     <ul>
-                        <li><a href="www.fascrs.org">American Society of Colon and rectal Surgeons</a></li>
-                        <li><a href="www.asocirgua.com">Asociación de Cirujanos de Guatemala</a></li>
+                        <li><a href="http://www.fascrs.org">American Society of Colon and rectal Surgeons</a></li>
+                        <li><a href="http://www.asocirgua.com">Asociación de Cirujanos de Guatemala</a></li>
                         <li><a href="http://www.aecp-es.org/">Asociacion Española de Coloproctologia</a></li>
-                        <li><a href="www.alacp.org">Asociacion Latino Americana de Colo Proctologia</a></li>
-                        <li><a href="www.asccelsalvador.com">Asociación Salvadoreña de Cirujanos Colorectales - ASCC </a></li>
-                        <li><a href="www.isucrs.org">International Society University Colon & Rectal Surgeons</a></li>
-                        <li><a href="www.MEDSCAPE.com">MEDSCAPE</a></li>
-                        <li><a href="www.sacp.org.ar">Sociedad Argentina de Coloproctologia</a></li>
-                        <li><a href="www.sbcp.org.br">Sociedad Brasileña de Coloproctologia </a></li>
+                        <li><a href="http://www.alacp.org">Asociacion Latino Americana de Colo Proctologia</a></li>
+                        <li><a href="http://www.asccelsalvador.com">Asociación Salvadoreña de Cirujanos Colorectales - ASCC </a></li>
+                        <li><a href="http://www.isucrs.org">International Society University Colon & Rectal Surgeons</a></li>
+                        <li><a href="http://www.MEDSCAPE.com">MEDSCAPE</a></li>
+                        <li><a href="http://www.sacp.org.ar">Sociedad Argentina de Coloproctologia</a></li>
+                        <li><a href="http://www.sbcp.org.br">Sociedad Brasileña de Coloproctologia </a></li>
                         <li><a href="http://www.escp.eu.com">Sociedad Europea de Coloproctologia</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-4 col-lg-offset-2">
                     <ul>
-                        <li><a href="www.smcrc.org.mx">Sociedad Mexicana de Cirujanos de Recto y Colon</a></li>
-                        <li><a href="www.coloproctologia-mexico.org">Sociedad Mexicana de Coloproctologia </a></li>
+                        <li><a href="http://www.smcrc.org.mx">Sociedad Mexicana de Cirujanos de Recto y Colon</a></li>
+                        <li><a href="http://www.coloproctologia-mexico.org">Sociedad Mexicana de Coloproctologia </a></li>
                     </ul>
                     <hr>
                     <h4>Becas</h4>
