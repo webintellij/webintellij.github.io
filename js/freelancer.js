@@ -23,7 +23,7 @@ $(function() {
         $(this).addClass("floating-label-form-group-with-focus");
     }).on("blur", ".floating-label-form-group", function() {
         $(this).removeClass("floating-label-form-group-with-focus");
-    });
+    });           
 });
 
 // Highlight the top nav as scrolling occurs
@@ -35,3 +35,4 @@ $('body').scrollspy({
 $('.navbar-collapse ul li:not(.dropdown) a').click(function() {
     $('.navbar-toggle:visible').click();
 });
+

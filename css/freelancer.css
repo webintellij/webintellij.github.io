@@ -693,7 +693,7 @@ Image credits: unsplash.com
 }
 
 .truncate {
-    width: 100%;
+    min-width: 100px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -702,3 +702,8 @@ Image credits: unsplash.com
 .about {
     text-align: justify;
 }  
+  
+.card-slide .carousel-control {
+    background-color: transparent !important;
+}
+
