@@ -732,7 +732,7 @@ Image credits: unsplash.com
     height: 50px;
 }
 
-.name-strong {
-    color: black;
-    font-weight: 550;
+.subname-strong {
+    color: #F7E78C;
+    font-weight: bold;
 }
