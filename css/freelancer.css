@@ -682,7 +682,8 @@ Image credits: unsplash.com
 
 .image-list>li {
     position: relative;
-    margin: 1.5em 0;    
+    margin: 2em 0; 
+    text-align: center;   
 }
 
 .nav.nav-tabs.nav-pills a {
@@ -724,7 +725,7 @@ Image credits: unsplash.com
 
 .link-icon {    
     background-repeat: no-repeat;
-    background-position: left;    
+    background-position: center;    
     background-size: contain;
     height: 50px;
 }
