@@ -388,6 +388,16 @@ footer .footer-below {
     outline: 0;
 }
 
+.btn-top {
+    color: #000000;
+    background-color: #F7E78C;
+    border-color: #F7E78C;
+}
+
+.btn-top:hover, .btn-top:active{    
+    background-color: rgb(240, 218, 95);    
+}
+
 .portfolio-modal .modal-content {
     padding: 100px 0;
     min-height: 100%;
@@ -758,7 +768,7 @@ Image credits: unsplash.com
 }
 
 .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
-    color: #000000;
+    color: #000000 !important;
     background-color: #F7E78C;
 }
 
