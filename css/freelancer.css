@@ -394,7 +394,7 @@ footer .footer-below {
     border-color: #F7E78C;
 }
 
-.btn-top:hover, .btn-top:active{  
+.btn-top:hover, .btn-top:active, .btn-top:focus{  
     color: #000000;  
     background-color: rgb(240, 218, 95);    
 }
