@@ -681,6 +681,10 @@ Image credits: unsplash.com
     position: relative;
 }
 
+.profile__img {
+    min-width: 210px;
+}
+
 .profile__img img {
     max-width: 200px;
     border-radius: 2px;
