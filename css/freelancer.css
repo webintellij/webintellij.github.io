@@ -397,6 +397,7 @@ footer .footer-below {
     background-clip: border-box;
     -webkit-box-shadow: none;
     box-shadow: none;
+    z-index: 1099;
 }
 
 .portfolio-modal .modal-content h2 {
@@ -451,7 +452,15 @@ footer .footer-below {
    text-shadow: 2px 2px #000; 
 }
 
-
+.text-truncate {    
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-height: 20px;     /* fallback */
+    max-height: 200px;      /* fallback */
+    -webkit-line-clamp: 10; /* number of lines to show */
+    -webkit-box-orient: vertical;     
+}
 
 .logo {
     position: absolute; top: 2px; width: 110px;  
@@ -730,6 +739,14 @@ Image credits: unsplash.com
     background-position: center;    
     background-size: contain;
     height: 50px;
+}
+
+.gallery-image {    
+    background-repeat: no-repeat; 
+    background-position: top; 
+    background-size: cover; 
+    height: 250px;
+    width: 100%;
 }
 
 .subname-strong {
