@@ -773,3 +773,10 @@ Image credits: unsplash.com
     background-color: #F7E78C;
 }
 
+.goals {
+    margin-left: -25px;
+}
+
+.goals > li {
+    padding-bottom: 5px;
+}
