@@ -108,18 +108,18 @@ var coloproctologos = [
 
 var cirujanos = [
     {"name":"Roberto Baldizón", "description":"4a. Calle 3-23 Zona 10 Ciudad Guatemala", "tel":"2361-6090", "email":"dr_baldizon@yahoo.com.mx", "pic":"img/members/tab2/img1.jpg", "title":"Dr."},
-    {"name":"Carlos Federico Castillo", "description":"6a. Avenida 7-39 Zona 10 Edificio Las Brisas Oficina 403”A” Ciudad Guatemala", "tel":"2361-3426", "email":"cfcastillor@hotmail.com", "pic":"img/members/tab2/img1.jpg", "title":"Dr."},
-    {"name":"Fernando González Arrechea", "description":"6a. Ave. 9-18, Zona 10 Edificio Sixtino II Ala 1 Of. 507 Ciudad, Guatemala", "tel":"2278-3136/ 2278-3139", "email":"gonzalezarrechea@yahoo.com", "pic":"img/members/tab2/img1.jpg", "title":"Dr."},
-    {"name":"Erwin Hernández Díaz", "description":"6a. Ave. 9-18,  Zona 10 Edifício Sixtino II Ala 1 Of. 507 Ciudad, Guatemala", "tel":"2278-3136 / 2278-3139", "email":"lucreher@yahoo.com ", "pic":"img/members/tab2/img1.jpg", "title":"Dr."},
-    {"name":"Edgar Herrera Ríos", "description":"6a. Ave. 7-39 zona 10 Edificio Las Brisas Of. 206 Ciudad, Guatemala", "tel":"2334-7570 ", "email":"drherrerarios@hotmail.com", "pic":"img/members/tab2/img1.jpg", "title":"Dr."},
-    {"name":"Julio César Morales Linares", "description":"4a. Ave. 15-73 Zona 10 Edifício Clinicas Medicas Of. 404 Ciudad Guatemala", "tel":"2337-1859 ", "email":"labryjcm@gmail.com", "pic":"img/members/tab2/img1.jpg", "title":"Dr."},
-    {"name":"Guillermo Ponce Figueroa", "description":"6a. Ave. 8-71 Zona 10 Hosp. Herrera Llerandi Ala sur 2do. Nivel Of. 7 Ciudad, Guatemala", "tel":"2362-8635", "email":"drguillermoponce@gmail.com", "pic":"img/members/tab3/img1.jpg", "title":"Dr."},
-    {"name":"Víctor H. Valdez Vásquez", "description":"11 Calle 2-37 Zona 1 3er. Nivel Ciudad Guatemala", "tel":"2232-5004", "email":"hugo_valdez_v@hotmail.com", "pic":"img/members/tab3/img1.jpg", "title":"Dr."}
+    {"name":"Carlos Federico Castillo", "description":"6a. Avenida 7-39 Zona 10 Edificio Las Brisas Oficina 403”A” Ciudad Guatemala", "tel":"2361-3426", "email":"cfcastillor@hotmail.com", "pic":"img/members/tab2/img2.jpg", "title":"Dr."},
+    {"name":"Fernando González Arrechea", "description":"6a. Ave. 9-18, Zona 10 Edificio Sixtino II Ala 1 Of. 507 Ciudad, Guatemala", "tel":"2278-3136/ 2278-3139", "email":"gonzalezarrechea@yahoo.com", "pic":"img/members/tab2/img3.jpg", "title":"Dr."},
+    {"name":"Erwin Hernández Díaz", "description":"6a. Ave. 9-18,  Zona 10 Edifício Sixtino II Ala 1 Of. 507 Ciudad, Guatemala", "tel":"2278-3136 / 2278-3139", "email":"lucreher@yahoo.com ", "pic":"img/members/tab2/img4.jpg", "title":"Dr."},
+    {"name":"Edgar Herrera Ríos", "description":"6a. Ave. 7-39 zona 10 Edificio Las Brisas Of. 206 Ciudad, Guatemala", "tel":"2334-7570 ", "email":"drherrerarios@hotmail.com", "pic":"img/members/tab2/img5.jpg", "title":"Dr."},
+    {"name":"Julio César Morales Linares", "description":"4a. Ave. 15-73 Zona 10 Edifício Clinicas Medicas Of. 404 Ciudad Guatemala", "tel":"2337-1859 ", "email":"labryjcm@gmail.com", "pic":"img/members/tab2/img6.jpg", "title":"Dr."},
+    {"name":"Guillermo Ponce Figueroa", "description":"6a. Ave. 8-71 Zona 10 Hosp. Herrera Llerandi Ala sur 2do. Nivel Of. 7 Ciudad, Guatemala", "tel":"2362-8635", "email":"drguillermoponce@gmail.com", "pic":"img/members/tab2/img7.jpg", "title":"Dr."},
+    {"name":"Víctor H. Valdez Vásquez", "description":"11 Calle 2-37 Zona 1 3er. Nivel Ciudad Guatemala", "tel":"2232-5004", "email":"hugo_valdez_v@hotmail.com", "pic":"img/members/tab2/img8.jpg", "title":"Dr."}
 ]
 
 var miembros = [
     {"name":"Brenda Escobar Ulloa", "description":"6a Ave. 7-66 Zona 10 Condominio Medico Oficina E-1 Ciudad, Guatemala", "tel":"2331-5633 / 2362-9753", "email":"cleoescobarulloa@gmail.com", "pic":"img/members/tab3/img1.jpg", "title":"Dra."},
-    {"name":"Gladys Monroy Escobar", "description":"14 Ave. 7-12 Zona 14 Edificio Empresarial La Villa Of. 18 Ciudad, Guatemala", "tel":"24160-6500", "email":"monroygime@hotmail.com", "pic":"img/members/tab3/img2.jpg", "title":"Dra."},
+    {"name":"Gladys Monroy Escobar", "description":"14 Ave. 7-12 Zona 14 Edificio Empresarial La Villa Of. 18 Ciudad, Guatemala", "tel":"24160-6500", "email":"monroygime@hotmail.com", "pic":"", "title":"Dra."},
     {"name":"Miguel Ángel Ortega", "description":"3a. Calle 10-71 Zona 15 Interior Hospital El Pilar Clínica de Radioterapia La Asunción Ciudad, Guatemala", "tel":"2420-0000 Ext. 8320", "email":"info@rla.com.gt", "pic":"img/members/tab3/img3.jpg", "title":"Dr."},
     {"name":"Jaime Álvarez", "description":"", "tel":"41502131", "email":"jaimealv@hotmail.es", "pic":"img/members/tab3/img3.jpg", "title":"Dr."}
 ]
