@@ -120,6 +120,6 @@ var cirujanos = [
 var miembros = [
     {"name":"Brenda Escobar Ulloa", "description":"6a Ave. 7-66 Zona 10 Condominio Medico Oficina E-1 Ciudad, Guatemala", "tel":"2331-5633 / 2362-9753", "email":"cleoescobarulloa@gmail.com", "pic":"img/members/tab3/img1.jpg", "title":"Dra."},
     {"name":"Gladys Monroy Escobar", "description":"14 Ave. 7-12 Zona 14 Edificio Empresarial La Villa Of. 18 Ciudad, Guatemala", "tel":"24160-6500", "email":"monroygime@hotmail.com", "pic":"", "title":"Dra."},
-    {"name":"Miguel Ángel Ortega", "description":"3a. Calle 10-71 Zona 15 Interior Hospital El Pilar Clínica de Radioterapia La Asunción Ciudad, Guatemala", "tel":"2420-0000 Ext. 8320", "email":"info@rla.com.gt", "pic":"img/members/tab3/img3.jpg", "title":"Dr."},
+    {"name":"Miguel Ángel Ortega", "description":"3a. Calle 10-71 Zona 15 Interior Hospital El Pilar Clínica de Radioterapia La Asunción Ciudad, Guatemala", "tel":"2420-0000 Ext. 8320", "email":"info@rla.com.gt", "pic":"img/members/tab3/img2.jpg", "title":"Dr."},
     {"name":"Jaime Álvarez", "description":"", "tel":"41502131", "email":"jaimealv@hotmail.es", "pic":"img/members/tab3/img3.jpg", "title":"Dr."}
 ]
