@@ -791,3 +791,6 @@ Image credits: unsplash.com
 #outerContainer #mainContainer #viewerContainer {
     top: 0 !important; /* move doc up into empty bar space */
 }
+.item-new {
+    min-height: 520px !important;
+}
