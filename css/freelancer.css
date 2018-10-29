@@ -803,9 +803,14 @@ Image credits: unsplash.com
     background-color: #8291B0;
 }
 
-.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
-    color: #000000 !important;
-    background-color: #F7E78C;
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {    
+    background-color: #8291B0;
+}
+
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {   
+    color: #000000 !important; 
+    background-color: #F7E78C !important;
 }
 
 .goals {

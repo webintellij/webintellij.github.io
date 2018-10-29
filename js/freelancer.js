@@ -14,6 +14,12 @@ $(function() {
         event.preventDefault();
     });
 
+    $("ul.nav-pills a").click(function (e) {
+        e.preventDefault();  
+        $(this).tab('show');
+    });
+
+      
     var sortingByName = (a, b) => {
         var nameA = a.lastName.toUpperCase(); // ignore upper and lowercase
         var nameB = b.lastName.toUpperCase(); // ignore upper and lowercase
@@ -33,18 +39,20 @@ $(function() {
         if($container.length > 0) {
             var cardHtml =  `<div class="card profile"> 
                                  <div class="profile__img">
-                                     <img src="${item.pic}" alt="${item.name} ${item.lastName}">
+                                    ${item.pic !== '' ? `<img src="${item.pic}" alt="${item.name} ${item.lastName}">`: ''}                                     
                                  </div>
                                  <div class="profile__info">
-                                     <h3>${item.title} ${item.name} ${item.lastName}</h3>
+                                     <h3>${item.title} ${item.name} ${item.lastName}</h3>                                     
                                      <h4>${item.type}</h4>
                                      <p>${item.description}</p>
-                                     <ul class="icon-list">
+                                    ${item.tel && item.email ? 
+                                    `<ul class="icon-list">
                                          <li><i class="glyphicon glyphicon-phone"></i> ${item.tel}</li>
                                          <li><i class="glyphicon glyphicon-envelope"></i> ${item.email}</li>
-                                     </ul>
-                                 </div>
-                             </div>`;
+                                     </ul>` : ''
+                                    }
+                                </div>
+                            </div>`;
             $container.append(cardHtml);               
         }
     };
@@ -56,6 +64,8 @@ $(function() {
     coloproctologos.forEach(item => addingItem(item, "miembros1"));
     cirujanos.forEach(item => addingItem(item, "miembros2"));
     miembros.forEach(item => addingItem(item, "miembros3"));
+    memoriam.forEach(item => addingItem(item, "miembros4"));
+    expresidentes.forEach(item => addingItem(item, "expresidentes"));
 });
 
 // Floating label headings for the contact form
@@ -114,11 +124,19 @@ var cirujanos = [
     {"type":"CIRUJANO CON INTERES EN COLON Y RECTO","name":"Julio César", "lastName": "Morales Linares", "description":"4ta. avenida 15-73 zona 10 Oficina # 105 Edificio Clínicas Médicas zona 10. Ciudad de Guatemala.", "tel":"(502)  23373460 y 23373461 ", "email":"labryjcm@gmail.com", "pic":"img/members/tab2/img6.jpg", "title":"Dr."},
     {"type":"CIRUJANO CON INTERES EN COLON Y RECTO","name":"Guillermo", "lastName": "Ponce Figueroa", "description":"6a. Ave. 8-71 Zona 10 Hosp. Herrera Llerandi Ala sur 2do. Nivel Of. 7 Ciudad, Guatemala", "tel":"2362-8635", "email":"drguillermoponce@gmail.com", "pic":"img/members/tab2/img7.jpg", "title":"Dr."},
     {"type":"CIRUJANO CON INTERES EN COLON Y RECTO","name":"Víctor H.", "lastName": "Valdez Vásquez", "description":"11 Calle 2-37 Zona 1 3er. Nivel Ciudad Guatemala", "tel":"2232-5004", "email":"hugo_valdez_v@hotmail.com", "pic":"img/members/tab2/img8.jpg", "title":"Dr."}
-]
+];
 
 var miembros = [
     {"type":"MIEMBRO ADHERENTE","name":"Brenda", "lastName": "Escobar Ulloa", "description":"6a Ave. 7-66 Zona 10 Condominio Medico Oficina E-1 Ciudad, Guatemala", "tel":"2331-5633 / 2362-9753", "email":"cleoescobarulloa@gmail.com", "pic":"img/members/tab3/img1.jpg", "title":"Dra."},
     {"type":"MIEMBRO ADHERENTE","name":"Gladys", "lastName": "Monroy Escobar", "description":"14 Ave. 7-12 Zona 14 Edificio Empresarial La Villa Of. 18 Ciudad, Guatemala", "tel":"24160-6500", "email":"monroygime@hotmail.com", "pic":"", "title":"Dra."},
     {"type":"MIEMBRO ADHERENTE","name":"Miguel Ángel", "lastName": "Ortega", "description":"3a. Calle 10-71 Zona 15 Interior Hospital El Pilar Clínica de Radioterapia La Asunción Ciudad, Guatemala", "tel":"2420-0000 Ext. 8320", "email":"info@rla.com.gt", "pic":"img/members/tab3/img2.jpg", "title":"Dr."},
     {"type":"MIEMBRO ADHERENTE","name":"Jaime", "lastName": "Álvarez", "description":"", "tel":"41502131", "email":"jaimealv@hotmail.es", "pic":"img/members/tab3/img3.jpg", "title":"Dr."}
+];
+
+var expresidentes = [
+    {"type":"Per&iacute;odo 2016-2018","name":"José Antonio", "lastName": "Perdomo Cuyún", "description":"2a. Calle 25-19 Zona 15 Vista Hermosa I Edificio Multimedica Of. 403 Ciudad, Guatemala", "tel":"2385-7863", "email":"antonio50287@yahoo.com ", "pic":"img/members/tab1/img2.jpg", "title":"Dr."},   
+];
+
+var memoriam = [
+    {"type":"OCTUBRE 2018","name":"INFORMACION", "lastName": "NO DISPONIBLE", "description":"", "pic":"", "title":""},
 ]
