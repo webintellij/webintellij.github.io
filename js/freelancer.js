@@ -29,30 +29,29 @@ $(function() {
     };
 
     var addingItem = (item, container) => {
-        var cardHtml = '<div class="card profile"> '+
-                       '     <div class="profile__img"> '+
-                       '         <img src="'+item.pic+'" alt=""> '+
-                       '     </div> '+
-                       '     <div class="profile__info"> '+
-                       '         <h3>'+item.title+' '+item.name+' '+item.lastName+'</h3> '+
-                       '         <h4>'+item.type+'</h4> '+
-                       '         <p>'+item.description+'</p> '+
-                       '         <ul class="icon-list"> '+
-                       '             <li><i class="glyphicon glyphicon-phone"></i> '+item.tel+'</li> '+
-                       '             <li><i class="glyphicon glyphicon-envelope"></i> '+item.email+'</li> '+
-                       '         </ul>'+
-                       '     </div>'+
-                       ' </div>';
-        $("#"+container).append(cardHtml);               
+        let $container = $("#"+container);
+        if($container.length > 0) {
+            var cardHtml =  `<div class="card profile"> 
+                                 <div class="profile__img">
+                                     <img src="${item.pic}" alt="${item.name} ${item.lastName}">
+                                 </div>
+                                 <div class="profile__info">
+                                     <h3>${item.title} ${item.name} ${item.lastName}</h3>
+                                     <h4>${item.type}</h4>
+                                     <p>${item.description}</p>
+                                     <ul class="icon-list">
+                                         <li><i class="glyphicon glyphicon-phone"></i> ${item.tel}</li>
+                                         <li><i class="glyphicon glyphicon-envelope"></i> ${item.email}</li>
+                                     </ul>
+                                 </div>
+                             </div>`;
+            $container.append(cardHtml);               
+        }
     };
 
     coloproctologos.sort(sortingByName);
     cirujanos.sort(sortingByName);
     miembros.sort(sortingByName);
-
-    console.log(coloproctologos);
-    console.log(cirujanos);
-    console.log(miembros);
 
     coloproctologos.forEach(item => addingItem(item, "miembros1"));
     cirujanos.forEach(item => addingItem(item, "miembros2"));
@@ -86,7 +85,7 @@ var coloproctologos = [
     {"type":"COLOPROCTOLOGO","name":"Rabi", "lastName": "Mejia", "description":"Edificio Centro Medico San Lucas 13 Ave. 6-20 zona 3, 4 nivel Quetzaltenango", "tel":"7736-8235", "email":"mejiarabi@hotmail.com", "pic":"img/members/tab1/img3.jpg", "title":"Dr."},
     {"type":"COLOPROCTOLOGO","name":"Gustavo", "lastName": "Alvarado Alecio", "description":"6ta. Ave. 9-18, Zona 10 Edifício Sixtino II  ala 2 oficina 702 Ciudad, Guatemala ", "tel":"2278-9846/47", "email":"alvaradoalecio@gmail.com", "pic":"img/members/tab1/img4.jpg", "title":"Dr."},
     {"type":"COLOPROCTOLOGO","name":"Carlos Eduardo", "lastName": "Pineda Molina", "description":"6a. Ave. 3-22 Zona 10 Edificio Centro Medico II Of. 905 Ciudad Guatemala ", "tel":"2332-8998", "email":"drepineda@gmail.com", "pic":"img/members/tab1/img5.jpg", "title":"Dr."},
-    {"type":"COLOPROCTOLOGO","name":"Eduardo", "lastName": "García Escobar", "description":"5a. Calle 7-79 Zona 9 TEL. 2334-6997 Ciudad, Guatemala", "tel":"", "email":"", "pic":"img/members/tab1/img6.jpg", "title":"Dr."},
+    {"type":"COLOPROCTOLOGO","name":"Eduardo", "lastName": "García Escobar", "description":"5a. Calle 7-79 Zona 9 Ciudad, Guatemala", "tel":" 2334-6997", "email":"", "pic":"img/members/tab1/img6.jpg", "title":"Dr."},
     {"type":"COLOPROCTOLOGO","name":"Tito José María", "lastName": "Gómez Méndez", "description":"10a. calle 2-22 Zona 14 - Edificio Torre de Parqueo Anexo Hospital La Paz. 7o. Nivel Oficina 710. Guatemala.", "tel":"(502) 2368-0401 - (502) 2368-0402", "email":"tjmgomez@gmail.com ", "pic":"img/members/tab1/img7.jpg", "title":"Dr."},
     {"type":"COLOPROCTOLOGO","name":"Mario", "lastName": "Hernández Chávez", "description":"20 Calle 9-26 Zona 13 Aurora II Ciudad, Guatemala", "tel":"2474-0392", "email":"marahecha@gmail.com ", "pic":"img/members/tab1/img8.jpg", "title":"Dr."},
     {"type":"COLOPROCTOLOGO","name":"Luís", "lastName": "Lujan Lorenzana", "description":"4a. Ave. 3-14 Zona 10 Ciudad, Guatemala", "tel":"2331-2971", "email":"dr.llujan@gmail.com", "pic":"img/members/tab1/img9.jpg", "title":"Dr."},

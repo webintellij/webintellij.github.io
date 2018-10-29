@@ -643,6 +643,7 @@ Image credits: unsplash.com
 }
 
 @media (min-width: 768px) {
+.media-new,    
 .profile {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -658,6 +659,13 @@ Image credits: unsplash.com
 }
 
 @media (max-width: 767.98px) {
+.media-new__img img {
+    margin: -155px 0 -10px;
+    width: 320px;
+    border: 8px solid #FFF;
+    border-radius: 50%;
+}
+
 .profile__img img {
     margin: -55px 0 -10px;
     width: 120px;
@@ -665,6 +673,13 @@ Image credits: unsplash.com
     border-radius: 50%;
 }
 
+.media-new{
+    margin-top: 175px;
+    text-align: center;
+}
+.media-new__info p{
+    text-align: left;
+}
 .profile {
     margin-top: 75px;
     text-align: center;
@@ -676,6 +691,7 @@ Image credits: unsplash.com
     -webkit-box-direction: normal;
 }
 
+.media-new__img
 .profile__img {
     padding: 5px;
     position: relative;
@@ -685,13 +701,26 @@ Image credits: unsplash.com
     min-width: 210px;
 }
 
+.media-new__img {
+    min-width: 320;
+}
+
 .profile__img img {
     max-width: 200px;
     border-radius: 2px;
 }
 
+.media-new__img img {
+    max-width: 305px;
+    border-radius: 2px;
+}
+.media-new__info,
 .profile__info {
     padding: 30px;
+}
+
+.media-info > .media-new__info p:first-child {
+    margin-top: 35px !important;
 }
 
 .icon-list,
@@ -793,4 +822,9 @@ Image credits: unsplash.com
 }
 .item-new {
     min-height: 520px !important;
+}
+
+.td-right {
+    text-align: right;
+    padding-right: 25px !important; 
 }
