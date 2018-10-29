@@ -661,7 +661,7 @@ Image credits: unsplash.com
 @media (max-width: 767.98px) {
 .media-new__img img {
     margin: -155px 0 -10px;
-    width: 320px;
+    width: 330px;
     border: 8px solid #FFF;
     border-radius: 50%;
 }
@@ -702,7 +702,7 @@ Image credits: unsplash.com
 }
 
 .media-new__img {
-    min-width: 320;
+    min-width: 330;
 }
 
 .profile__img img {
@@ -711,10 +711,12 @@ Image credits: unsplash.com
 }
 
 .media-new__img img {
-    max-width: 305px;
+    max-width: 315px;
     border-radius: 2px;
 }
-.media-new__info,
+.media-new__info {
+    padding: 5px 5px 5px 40px;
+}
 .profile__info {
     padding: 30px;
 }
@@ -827,4 +829,15 @@ Image credits: unsplash.com
 .td-right {
     text-align: right;
     padding-right: 25px !important; 
+}
+.modal-dialog {
+    z-index: 999999 !important;
+}
+
+#register-form > .modal-dialog {
+    width: 90%;
+}
+
+#register-form .form-group {
+    margin-top: 5px;
 }
