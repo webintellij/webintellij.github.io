@@ -5,6 +5,8 @@ $(function() {
         $('#register-form').modal('show');
     }
 
+    $('#payDate').datetimepicker({format: 'DD/MM/YYYY'});
+
     $("input,textarea,select").jqBootstrapValidation({
         preventSubmit: true,
         submitError: function($form, event, errors) {

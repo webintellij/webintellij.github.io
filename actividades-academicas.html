@@ -33,6 +33,7 @@
     <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/bootstrap-dropdownhover.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datetimepicker-standalone.css">
 
     <!-- Custom CSS -->
     <link href="css/freelancer.css" rel="stylesheet">
@@ -88,7 +89,7 @@
                                 <li role="separator" class="divider"></li>
                                 <li><a href="pdf/Estatutos.pdf" target="_blank">Estatutos (PDF)</a></li>
                                 <li role="separator" class="divider"></li>
-                                <li><a href="/members.html">Miembros de la Asociaci&oacute;n</a></li>
+                                <li><a href="/members">Miembros de la Asociaci&oacute;n</a></li>
                                 <li role="separator" class="divider"></li>
                             </ul>
                         </li>
@@ -191,7 +192,7 @@
                     <div class="form-group">
                         <div class="col-md-6 control-group">
                             <label for="payDate"><span class="glyphicon glyphicon-calendar"></span>  Fecha de Pago</label>
-                            <input type="date" class="form-control" id="payDate" placeholder="Ingrese fecha de pago" required data-validation-required-message="Por favor ingrese la fecha de pago.">
+                            <input type="text" class="form-control" id="payDate" placeholder="Ingrese fecha de pago" required data-validation-required-message="Por favor ingrese la fecha de pago.">
                             <p class="help-block text-danger"></p>
                         </div>
                         <div class="col-md-6 control-group">
@@ -222,7 +223,7 @@
 
                     <div class="form-group js-document">
                         <div class="col-md-6 control-group">
-                            <label for="docNumber"><span class="glyphicon glyphicon-book"></span>  No. de Carn&eacute;</label>
+                            <label for="docNumber"><span class="glyphicon glyphicon-book"></span> No. Colegiado / Carn&eacute;</label>
                             <input type="text" class="form-control" id="docNumber" placeholder="Ingrese numero de documento" required data-validation-required-message="Por favor ingrese el No. de documento.">
                             <p class="help-block text-danger"></p>
                         </div>
@@ -250,10 +251,10 @@
                     <div class="form-group">                        
                         <div class="col-md-offset-6 col-md-6">
                             <div class="col-md-6">
-                                <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Inscribirse</button>
+                                <button style="margin-top: 5px;" type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Inscribirse</button>
                             </div>
                             <div class="col-md-6">
-                                <button type="submit" id="cancel" class="btn btn-danger btn-block" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancelar</button>                    
+                                <button style="margin-top: 5px;" type="submit" id="cancel" class="btn btn-danger btn-block" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancelar</button>                    
                             </div>                        
                         </div>                        
                     </div>                        
@@ -264,12 +265,12 @@
         </div>
       </div>
 
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)
     <div class="scroll-top page-scroll">
         <a class="btn btn-top" href="#page-top" data-to="#page-top">
             <i class="fa fa-chevron-up"></i>
         </a>
-    </div>
+    </div> -->
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
@@ -284,7 +285,9 @@
     <script src="js/cbpAnimatedHeader.js"></script>
 
     <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/jqBootstrapValidation.js"></script>    
+    <script src="bower_components/moment/min/moment.min.js"></script>    
+    <script src="js/bootstrap-datetimepicker.min.js"></script>
     <script src="js/register_form.js"></script>
 
     <!-- Custom Theme JavaScript -->
