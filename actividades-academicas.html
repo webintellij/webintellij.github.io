@@ -123,7 +123,9 @@
                 <div class="col-md-12">
                     <div class="card media-new">
                         <div class="media-new__img">
-                            <img src="./img/AFICHEAA.jpg" alt="IV JORNADA DEPARTAMENTAL">
+                            <a href="#ivJornadaDepartamentalModal" data-toggle="modal">
+                                <img src="./img/AFICHEAA.jpg" alt="IV JORNADA DEPARTAMENTAL">
+                            </a>
                         </div>
                         <div class="media-new__info">
                             <h3>IV JORNADA DEPARTAMENTAL</h3>
@@ -196,7 +198,7 @@
                             <p class="help-block text-danger"></p>
                         </div>
                         <div class="col-md-6 control-group">
-                            <label for="amount"><span class="glyphicon glyphicon-usd"></span>  Cantidad que cancel&oacute;</label>
+                            <label for="amount"><span><b>Q</b></span>   Cantidad que cancel&oacute;</label>
                             <input type="number" step="0.01" class="form-control" id="amount" placeholder="Ingrese cantidad" required data-validation-required-message="Por favor ingrese la cantidad correcta.">
                             <p class="help-block text-danger"></p>
                         </div>
@@ -264,6 +266,27 @@
       
         </div>
       </div>
+
+      <div class="portfolio-modal modal fade" id="ivJornadaDepartamentalModal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">                            
+                                <img src="img/AFICHEAA.jpg" class="img-responsive img-centered" alt="">
+                                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)
     <div class="scroll-top page-scroll">
