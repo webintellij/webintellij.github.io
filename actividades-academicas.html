@@ -177,7 +177,7 @@
               </div>
             <div class="modal-body">
                 <p>Por favor, es necesario que llene el formulario que se despliega a continuación:</p><br>
-                <form role="form" class="form-horizontal" id="registerForm" novalidate>
+                <form role="form" enctype="multipart/form-data" class="form-horizontal" id="registerForm" novalidate>
                     <div class="form-group">
                         <div class="col-md-6 control-group">
                             <label for="firstName"><span class="glyphicon glyphicon-user"></span>  Nombres</label>
@@ -231,7 +231,7 @@
                         </div>
                         <div class="col-md-6 control-group hidden">
                             <label for="document"><span class="glyphicon glyphicon-file"></span>  Copia de Carn&eacute;</label>
-                            <input type="file" class="form-control" id="document">
+                            <input type="file" class="form-control" id="document" required data-validation-required-message="Por favor seleccione un documento valido.">
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>

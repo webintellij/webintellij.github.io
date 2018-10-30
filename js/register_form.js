@@ -15,35 +15,19 @@ $(function() {
         submitSuccess: function($form, event) {
             event.preventDefault(); // prevent default submit behaviour
             // get values from FORM
-            var firstName = $("input#firstName").val();
-            var lastName = $("input#lLastName").val();
-            var payDate = $("input#payDate").val();
-            var amount = $("input#amount").val();
-            var billNumber = $("input#billNumber").val();
-            var category = $("input#category").val();
-            var docNumber = $("input#docNumber").val();
-            var email = $("input#email").val();
-            var phone = $("input#phone").val();            
-            var messageName = name; // For Success/Failure Message
+            var firstName = $("input#firstName").val();                   
+            var messageName = firstName; // For Success/Failure Message
             // Check for white space in name for Success/Fail message
-            if (firstName.indexOf(' ') >= 0) {
-                firstName = name.split(' ').slice(0, -1).join(' ');
+            if (messageName.indexOf(' ') >= 0) {
+                messageName = firstName.split(' ').slice(0, -1).join(' ');
             }
             $.ajax({
                 url: "././mail/contact_me.php",
                 type: "POST",
-                data: {
-                    firstName: firstName,
-                    lastName: lastName,
-                    payDate: payDate,
-                    amount: amount,
-                    billNumber: billNumber,
-                    category: category,
-                    docNumber: docNumber,
-                    email: email,
-                    phone: phone
-                },
+                data: new FormData($form[0]),
+                contentType: false,
                 cache: false,
+                processData:false,
                 success: function() {
                     // Success message
                     $('#success').html("<div class='alert alert-success'>");
