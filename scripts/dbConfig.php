@@ -1,9 +1,9 @@
 <?php
 //DB details
 $dbHost = 'localhost';
-$dbUsername = 'root';
-$dbPassword = 'root';
-$dbName = 'codexworld';
+$dbUsername = 'npkzplmy_accrg_a';
+$dbPassword = 'P@$$w0rd';
+$dbName = 'npkzplmy_accrg';
 
 //Create connection and select DB
 $db = new mysqli($dbHost, $dbUsername, $dbPassword, $dbName);

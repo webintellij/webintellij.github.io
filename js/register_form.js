@@ -22,7 +22,7 @@ $(function() {
                 messageName = firstName.split(' ').slice(0, -1).join(' ');
             }
             $.ajax({
-                url: "././mail/contact_me.php",
+                url: "././scripts/register_form.php",
                 type: "POST",
                 data: new FormData($form[0]),
                 contentType: false,
@@ -30,7 +30,7 @@ $(function() {
                 processData:false,
                 success: function() {
                     // Success message
-                    $('#success').html("<div class='alert alert-success'>");
+                    $('#success').html("<div class='alert alert-success' style='color: black !important'>");
                     $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                         .append("</button>");
                     $('#success > .alert-success')
@@ -39,7 +39,7 @@ $(function() {
                         .append('</div>');
 
                     //clear all fields
-                    $('#contactForm').trigger("reset");
+                    $('#registerForm').trigger("reset");
                 },
                 error: function() {
                     // Fail message
