@@ -64,7 +64,8 @@ $(function() {
     coloproctologos.forEach(item => addingItem(item, "miembros1"));
     cirujanos.forEach(item => addingItem(item, "miembros2"));
     miembros.forEach(item => addingItem(item, "miembros3"));
-    memoriam.forEach(item => addingItem(item, "miembros4"));
+    miemborsHonorables.forEach(item => addingItem(item, "miembros4"));
+    memoriam.forEach(item => addingItem(item, "miembros5"));
     expresidentes.forEach(item => addingItem(item, "expresidentes"));
 });
 
@@ -138,5 +139,9 @@ var expresidentes = [
 ];
 
 var memoriam = [
+    {"type":"OCTUBRE 2018","name":"INFORMACION", "lastName": "NO DISPONIBLE", "description":"", "pic":"", "title":""},
+]
+
+var miemborsHonorables = [
     {"type":"OCTUBRE 2018","name":"INFORMACION", "lastName": "NO DISPONIBLE", "description":"", "pic":"", "title":""},
 ]

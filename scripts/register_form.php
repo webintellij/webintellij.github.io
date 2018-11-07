@@ -104,7 +104,7 @@ function prepareEmail( $formData, $isAttach, $filename, $fileorgname ) {
     echo $insert?'Row inserted ok':'err';
     echo " \n";
 
-    $to = "contactenos@accrg.net, josue.rangelcarrera@gmail.com";
+    $to = "contactenos@accrg.net";
     $email_subject = "Website ACCRG Formulario de Incripcion:  $firstName $lastName";
     $email_body = "";
     $html_body = "
