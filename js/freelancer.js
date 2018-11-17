@@ -42,8 +42,9 @@ $(function() {
                                     ${item.pic !== '' ? `<img src="${item.pic}" alt="${item.name} ${item.lastName}">`: ''}                                     
                                  </div>
                                  <div class="profile__info">
-                                     <h3>${item.title} ${item.name} ${item.lastName}</h3>                                     
-                                     <h4>${item.type}</h4>
+                                     <h3>${item.title} ${item.name} ${item.lastName}</h3>
+                                     ${item.type !== '' ?                                    
+                                     `<h4>${item.type}</h4>` : ''}
                                      <p>${item.description}</p>
                                     ${item.tel && item.email ? 
                                     `<ul class="icon-list">
@@ -60,11 +61,13 @@ $(function() {
     coloproctologos.sort(sortingByName);
     cirujanos.sort(sortingByName);
     miembros.sort(sortingByName);
+    miemborsHonorarios.sort(sortingByName);
+
 
     coloproctologos.forEach(item => addingItem(item, "miembros1"));
     cirujanos.forEach(item => addingItem(item, "miembros2"));
     miembros.forEach(item => addingItem(item, "miembros3"));
-    miemborsHonorables.forEach(item => addingItem(item, "miembros4"));
+    miemborsHonorarios.forEach(item => addingItem(item, "miembros4"));
     memoriam.forEach(item => addingItem(item, "miembros5"));
     expresidentes.forEach(item => addingItem(item, "expresidentes"));
 });
@@ -139,9 +142,16 @@ var expresidentes = [
 ];
 
 var memoriam = [
-    {"type":"OCTUBRE 2018","name":"INFORMACION", "lastName": "NO DISPONIBLE", "description":"", "pic":"", "title":""},
+    {"type":"","name":"Fernando ", "lastName": "Leiva", "description":"", "pic":"img/members/memoriam/dr_fernando_leiva.jpg", "title":"Dr."},
+    {"type":"","name":"Carlos ", "lastName": "Escobar", "description":"", "pic":"img/members/memoriam/dr_carlos_escobar.jpg", "title":"Dr."},
+    {"type":"","name":"Rigoberto ", "lastName": "Pellecer", "description":"", "pic":"img/members/memoriam/dr_rigoberto_pellecer.jpg", "title":"Dr."},
+    {"type":"","name":"Eduardo ", "lastName": "Qui&ntilde;onez", "description":"", "pic":"img/members/memoriam/dr_eduardo_quinonez.jpeg", "title":"Dr."},
+    {"type":"","name":"Brenda ", "lastName": "Escobar", "description":"", "pic":"img/members/memoriam/dra_brenda_escobar_ulloa.jpg", "title":"Dra."}
 ]
 
-var miemborsHonorables = [
-    {"type":"OCTUBRE 2018","name":"INFORMACION", "lastName": "NO DISPONIBLE", "description":"", "pic":"", "title":""},
+var miemborsHonorarios = [
+    {"type":"MIEMBRO HONORARIO","name":"Peter", "lastName": "Sagar (UK)", "description":"", "pic":"img/members/honorarios/dr_peter_sagar.jpg", "title":"Dr."},
+    {"type":"MIEMBRO HONORARIO","name":"Julio", "lastName": "Garc&iacute;a-Aguilar (USA)", "description":"", "pic":"img/members/honorarios/dr_julio_garcia-aguilar.jpg", "title":"Dr."},
+    {"type":"MIEMBRO HONORARIO","name":"Julio", "lastName": "Pineda", "description":"", "pic":"img/members/honorarios/dr_julio_pineda.jpg", "title":"Dr."},
+    {"type":"MIEMBRO HONORARIO","name":"Mario", "lastName": "Hernandez", "description":"", "pic":"img/members/honorarios/dr_mario_hernandez_chavez.jpg", "title":"Dr."}
 ]
