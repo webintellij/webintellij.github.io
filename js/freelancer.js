@@ -212,9 +212,9 @@ var miemborsHonorarios = [
 ];
 
 var multimedia = [ 
-    {"id":"1", "src" : "img/pic/1.jpg"},
-    {"id":"2", "src" : "img/pic/2.jpg"},
-    {"id":"3", "src" : "img/pic/3.jpg"},
+    //{"id":"1", "src" : "img/pic/1.jpg"},
+    //{"id":"2", "src" : "img/pic/2.jpg"},
+    //{"id":"3", "src" : "img/pic/3.jpg"},
     {"id":"4", "src" : "img/pic/4.jpg"},
     {"id":"5", "src" : "img/pic/5.jpg"},
     {"id":"6", "src" : "img/pic/6.jpg"},
