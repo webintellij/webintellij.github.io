@@ -1,6 +1,7 @@
 <?php
 // Check for empty fields
 if(empty($_POST['firstName'])  		||
+   empty($_POST['eventId']) 		||
    empty($_POST['lastName']) 		||
    empty($_POST['payDate']) 		||   
    empty($_POST['category'])	    ||
@@ -57,6 +58,7 @@ function prepareEmail( $formData, $isAttach, $filename, $fileorgname ) {
     $docNumber = $formData['docNumber'];
     $phone = $formData['phone'];
     $email_address = $formData['email'];
+    $eventId = $formData['eventId'];
 
     if(empty($formData['amount'])) {
         $amount = "0";
@@ -96,7 +98,7 @@ function prepareEmail( $formData, $isAttach, $filename, $fileorgname ) {
                             bill_number, 
                             phone, 
                             email) 
-                VALUES (1,'". $firstName ."','". $lastName ."','". $payDate ."',
+                VALUES ($eventId,'". $firstName ."','". $lastName ."','". $payDate ."',
                           '". $categoryName."','". $docNumber ."','". $amount ."',
                           '". $billNumber ."','". $phone ."','". $email_address ."')";
     $insert = $db->query($query);    
@@ -104,7 +106,7 @@ function prepareEmail( $formData, $isAttach, $filename, $fileorgname ) {
     echo $insert?'Row inserted ok':'err';
     echo " \n";
 
-    $to = "contactenos@accrg.net";
+    $to = "contactenos@accrg.net, oscar.enriquez.torre@gmail.com";
     $email_subject = "Website ACCRG Formulario de Incripcion:  $firstName $lastName";
     $email_body = "";
     $html_body = "
