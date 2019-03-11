@@ -1065,3 +1065,9 @@ Image credits: unsplash.com
         height: 35vh;
     }
 }
+
+.profile__info .profile-link {
+    background: #ffffff !important;
+    color: rgba(0, 0, 0, .75) !important;
+    padding: 0 1rem;
+}

@@ -82,6 +82,7 @@ function prepareEmail( $formData, $isAttach, $filename, $fileorgname ) {
             $categoryName .= "ESTUDIANTE";
     }
 
+    $categoryName = $category;
 
     //include database configuration file
     include_once 'dbConfig.php';
@@ -107,6 +108,7 @@ function prepareEmail( $formData, $isAttach, $filename, $fileorgname ) {
     echo " \n";
 
     $to = "contactenos@accrg.net, oscar.enriquez.torre@gmail.com";
+    // $to = "oscar.enriquez.torre@gmail.com";
     $email_subject = "Website ACCRG Formulario de Incripcion:  $firstName $lastName";
     $email_body = "";
     $html_body = "
