@@ -134,7 +134,7 @@ function prepareEmail( $formData, $isAttach, $filename, $fileorgname ) {
     </tr>
     <tr>
     <th>Cantidad Cancelada</th>
-    <td>Q. $amount</td>
+    <td>USD. $amount</td>
     </tr>
     <tr>
     <th>No. de boleta de pago</th>
