@@ -212,13 +212,13 @@ var miemborsHonorarios = [
 ];
 
 var multimedia = [ 
-    //{"id":"1", "src" : "img/pic/1.jpg"},
-    //{"id":"2", "src" : "img/pic/2.jpg"},
-    //{"id":"3", "src" : "img/pic/3.jpg"},
+    {"id":"1", "src" : "img/pic/1.jpg"},
+    {"id":"2", "src" : "img/pic/2.jpg"},
+    {"id":"3", "src" : "img/pic/3.jpg"},
     {"id":"4", "src" : "img/pic/4.jpg"},
     {"id":"5", "src" : "img/pic/5.jpg"},
-    {"id":"6", "src" : "img/pic/6.jpg"},
-    {"id":"7", "src" : "img/pic/7.jpg"},
+    {"id":"6", "src" : "img/pic/6.jpg"}
+    /*{"id":"7", "src" : "img/pic/7.jpg"},
     {"id":"8", "src" : "img/pic/8.jpg"},
     {"id":"9", "src" : "img/pic/9.jpg"},
     {"id":"10", "src" : "img/pic/10.jpg"},
@@ -243,5 +243,5 @@ var multimedia = [
     {"id":"29", "src" : "img/pic/29.jpg"},
     {"id":"30", "src" : "img/pic/30.jpg"},
     {"id":"31", "src" : "img/pic/31.jpg"},
-    {"id":"32", "src" : "img/pic/32.jpg"}
+    {"id":"32", "src" : "img/pic/32.jpg"}*/
 ];
