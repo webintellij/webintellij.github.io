@@ -26,6 +26,14 @@ if(!empty($_FILES['document']['name'])) {
 
 function getFile( $filename , $formData ) {
     
+    // save file
+    $info = pathinfo($_FILES['document']['name']);
+    $ext = $info['extension']; // get the extension of the file
+    $newname = $formData['firstName'].$formData['lastName'].".".$ext; 
+
+    $target = 'uploaded_files/'.$newname;
+    move_uploaded_file( $_FILES['document']['tmp_name'], $target);
+
     $allowedExts = array("csv","pdf", "jpg", "png", "jpeg");
     $temp = explode(".", $_FILES["document"]["name"]);
     $extension = end($temp);

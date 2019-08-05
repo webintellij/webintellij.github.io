@@ -463,6 +463,16 @@
                                 <input type="number" class="form-control" id="billNumber" name="billNumber" placeholder="Ingrese No. de Boleta" required data-validation-required-message="Por favor ingrese el No. de boleta.">
                                 <p class="help-block text-danger"></p>
                             </div>
+
+                            <div class="col-md-6 control-group">
+                                <label for="billImage"><span class="glyphicon glyphicon-tag"></span> Imagen de Boleta de pago</label>
+                                <input type="file" class="form-control" id="billImage" name="billImage" accept="image/*" required data-validation-required-message="Por favor seleccione un documento valido." >
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                           
                             <div class="col-md-6 control-group">
                                 <label for="category"><span class="glyphicon glyphicon-th-list"></span>  Categoria que cancela</label>
                                 <select class="form-control" id="category" name="category" required data-validation-required-message="Seleccione la categoria correcta.">
@@ -976,57 +986,141 @@
                                     <div class="profile__info text-center">
                                         <div class="profile__info-img" style="background-image: url('img/conferencistas2019/dr_jose_guillem.png')"></div>
                                         <h5>Dr. Jose Guillem. Memorial Sloan Kettering Cancer Center, USA.</h5>
+                                        <p>Cirujano Colorrectal miembo del staff del Memorial Sloan Kettering Cancer Center por 28 años.
+                                            Dedicación a Cáncer de Colon y Recto primario y recurrente y hereditario. Director del Registro del
+                                            Cáncer Familiar Colorrectal Hereditario del MSKCC. Experto en Técnicas Mínimamente invasivas y
+                                            TEM, Endoscopia, Laparoscopia y Cirugía Robótica.</p>
                                     </div>
 
                                     <div class="profile__info text-center">
                                         <div class="profile__info-img" style="background-image: url('img/conferencistas2019/dr_regelio_morales.png')"></div>
                                         <h5>Dr. Rogelio Morales Cattani. Hospital Clínica Kennedy, Ecuador</h5>
+                                        <p>Cirugía Colorrectal en Barcelona.
+                                            Jefe de Coloproctología, Presidente del Comité de Bioética, Presidente Comité de Auditoría
+                                            Médica, Jefe de la División de Cirugía, Sub Director Técnico y Director en Hospital Naval de
+                                            Guayaquil de 1988 al 2009.
+                                            Fundador y Editor de la Revista Médica Naval.</p>
                                     </div>
                                     <div class="profile__info text-center">
                                         <div class="profile__info-img" style="background-image: url('img/conferencistas2019/dr_miguel_mercado.png')"></div>
                                         <h5>Dr. Miguel Angel Mercado, Ciencias Médicas y Nutrición Salvador Zubirán, México.</h5>
+                                        <p>Cirugía General en La Universidad Autónoma de México y Cirugía Hepática en Instituto Nacional de
+                                            Nutrición Salvador Zubirán y Hospital Heinz Kalk Krankenhaus Bad Kissingen, Alemania y el Colegio
+                                            Superior de Medicina de Hannover (Medizinische Hochschule Hannover).
+                                            Cirugía Hepática en Instituto de Nutrición Nacional de México y Transplante Hepático en la
+                                            universidad de Pittsburg, Nebraska y Alabama en Birgmighan.
+                                            Cirujano de la clínica de Hipertensión Portal y Coordinador del Programa de Transplante Hepático.</p>
                                     </div>
                                     <div class="profile__info text-center">
                                         <div class="profile__info-img" style="background-image: url('img/conferencistas2019/dr_adrian_ortega.png')"></div>
                                         <h5>Dr. Adrian E Ortega, Keck School of Medicine, USC, USA.</h5>
+                                        <p>Graduado de la Facultad de Medicina de Harvard, Boston y Cirugía General y Colorrectal en
+                                            University of Southern California y se hizo miembro del departamento de Cirugía. Actualmente
+                                            trabaja en LAC y USC Medical Center y tiene a su cargo la docencia de estudiantes, residentes y
+                                            Fellows.</p>
                                     </div>
                                     <div class="profile__info text-center">
                                         <div class="profile__info-img" style="background-image: url('img/conferencistas2019/dr_feza_remsi.png')"></div>
                                         <h5>Dr. Feza Remsi, NYU Langone health, USA</h5>
+                                        <p>Cirugía General y Colorrectal en Cleveland Clinic Foundation (Cleveland, OH).
+                                            Actualmente Profesor del Departamento de Cirugía y Director del Centro de Enfermedad
+                                            Inflamatoria Intestinal en NYU Langone Health, New York.</p>
                                     </div>
-                                    <div class="profile__info text-center">
-                                        <div class="profile__info-img" style="background-image: url('img/conferencistas2019/dra_giovanna_dasilva.png')"></div>
-                                        <h5>Dra. Giovanna DaSilva, Cleveland Clinic, Weston, Fl. USA.</h5>
-                                    </div>
+                                    
                                     <div class="profile__info text-center">
                                         <div class="profile__info-img" style="background-image: url('img/conferencistas2019/dr_elie_schochet.png')"></div>
                                         <h5>Dr. Elie Schochet, Holly Cross Medical Group, USA</h5>
+                                        <p>Cirugía General en Lehigh Valley Hospital, Allentown, PA y Cirugía Colorrectal en Cleveland Clinic
+                                            Weston, FL. Actualmente miembro del departamento de Cirugía del Holly Cross Medical Group,
+                                            Florida, con principal interés en Cirugía Colorectal, Anoscopia de Alta Resolución, Cirugía
+                                            Mínimamente invasiva y Enfermedades anorectales asociadas a HIV.</p>
+                                    </div>
+
+                                    <div class="profile__info text-center">
+                                        <div class="profile__info-img" style="background-image: url('img/conferencistas2019/dr_maria_luisa_reyes.png')"></div>
+                                        <h5>Dra  Maria Luisa  Reyes Díaz, Sevilla, España.</h5>
+                                        <p>Unidad de Cirugía Mayor Ambulatoria y Pared Abdominal. 
+                                            Unidad de Cirugía General y Aparato Digestivo. 
+                                            Hospital Universitario Virgen Macarena, Sevilla, España
+                                            </p>
+                                    </div>
+
+                                    <div class="profile__info text-center">
+                                        <div class="profile__info-img" style="background-image: url('img/conferencistas2019/dr_fernando_portilla.png')"></div>
+                                        <h5>Dr. Fernando de la Portilla de Juan, Sevilla, España.</h5>
+                                        <p>Especialista en Coloproctología y Piso Pélvico.
+                                            Board Europeo en Coloproctología por el European Council.
+                                            Jefe de Sección Hospital Virgen del Rocío, Sevilla 
+                                            Actualmente Presidente de la Asociación Española de Colo Proctología.                                            
+                                            </p>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="profile__info text-center">
                                         <div class="profile__info-img" style="background-image: url('img/conferencistas2019/dr_jorge_latif.jpg')"></div>
                                         <h5>Dr. Jorge Latif. Clínica Lanus, Argentina</h5>
+                                        <p>Jefe de Servicio de Cirugía General y Coloproctología en la Clínica Lanús.
+                                            Docente Cirugía Universidad de Buenos Aires. Profesor Adjunto de Cirugía Universidad Abierta
+                                            Interamericanas.
+                                            Fellow Internacional College of Surgeons in Colorectal Surgery.
+                                            Fellow American College of Surgeons.</p>
                                     </div>
                                     <div class="profile__info text-center">
                                         <div class="profile__info-img" style="background-image: url('img/conferencistas2019/dr_antonio_lacy.png')"></div>
                                         <h5>Dr. Antonio Lacy Fortuny. Hospital Clinic de Barcelona, España</h5>
+                                        <p>Cirugía General y Aparato Digestivo en Hospital Clinic de Barcelona., Universitat Emory d´Atlanta,
+                                            Pacific Presbiterian Hospital en San Francisco, Cleveland Clinic Ohio, Mount Sinai y Cornell
+                                            University en New York.
+                                            Jefe de Servicio de Cirugía Gastrointestinal, Coordinador de la Unidad de Cáncer Colorrectal del
+                                            Hospital Clinic de Barcelona.
+                                            Profesor de Cirugía y Especialidades Quirúrgicas de la Facultad de Medicina de la Universidad de
+                                            Barcelona
+                                            Director del Instituto Quirúrgico Lacy en el Hospital Quirón de Barcelona.</p>
                                     </div>
                                     <div class="profile__info text-center">
                                         <div class="profile__info-img" style="background-image: url('img/conferencistas2019/dr_noel_salgado.jpeg')"></div>
                                         <h5>Dr. Noel Salgado Nesme, Ciencias Médicas y Nutrición Salvador Zubirán, México.</h5>
+                                        <p>Cirujano Colorrectal entrenado en Hospital Médica Sur, con posgrado en el Instituto de
+                                            Nutrición ante la UNAM (Coloproctología) y en el Hospital Clinic de Barcelona (Cirugía Colorrectal
+                                            Laparoscópica).
+                                            Médico adscrito al Servicio de Cirugía y Cirugía de Colon y Recto en el Instituto Nacional de
+                                            Ciencias Médicas y Nutrición “Salvador Zubirán”;  profesor de Coloproctología en la UNAM,
+                                            profesor de patología quirúrgica en la Universidad LASALLE y miembro del Sistema Nacional de
+                                            Investigadores por el CONACYT.</p>
                                     </div>
                                     <div class="profile__info text-center">
                                         <div class="profile__info-img" style="background-image: url('img/conferencistas2019/dr_kellie_mathis.png')"></div>
                                         <h5>Dr. Kellie Mathis, Mayo Clinic, Rochester, MN. USA.</h5>
-                                    </div>
-                                    <div class="profile__info text-center">
-                                        <div class="profile__info-img" style="background-image: url('')"></div>
-                                        <h5>Dr. Chichih Wang, Chung Shan Medical University Hospital, Taiwan</h5>
+                                        <p>Cirugía General y Colorrectal de la Clínica Mayo, Rochester, MN.
+                                            Director Asociado del Programa de Cirugía Colorrectal, Profesor Asociado, Jefe Consultante y
+                                            Director del Programa Internacional de Cirugía Colorrectal en la división de Cirugía Colorrectal del
+                                            Departamento de Cirugía de la Clínica Mayo, Rochester.</p>
                                     </div>
                                     <div class="profile__info text-center">
                                         <div class="profile__info-img" style="background-image: url('img/conferencistas2019/dr_arun_nagarajan.png')"></div>
                                         <h5>Dr. Arun Nagarajan, Cleveland Clinic, Weston, Fl. USA.</h5>
+                                        <p>Medico de la Universidad de Mysore, India. Medicina Interna en St Luke´s Hospital; Chicago y
+                                            Hemato-Ocología en la Universidad de Arkansas para Ciencias Médicas. Estuvo en el Centro de
+                                            Cáncer David lee en Charleston y fue investigador primario en el Eastern Cooperative Oncology
+                                            Group (ECOG). Actualmente miembro del departamento de Hemato Oncología de la Clínica
+                                            Cleveland en Weston, Florida.</p>
+                                    </div>
+                                    <div class="profile__info text-center">
+                                        <div class="profile__info-img" style="background-image: url('img/conferencistas2019/dr_eric_weiss.png')"></div>
+                                        <h5>Dr. Eric Weiss, Cleveland Clinic, Weston, Fl. USA</h5>
+                                        <p>Oficial designado de la Institución (DIO) y Presidente de la Educación Médica de Graduados,  Director del Programa de Residencia en Cirugía Colorrectal, Director de Cirugía Endoscópica de la Cleveland Clinic in Weston, Fl. 
+                                            Miembro del  Comité de Revisión de Residencias en Cirugía Colorrectal.
+                                            Profesor asistencial de Cirugía en la Cleveland Clínic Foundation Health Sciences Center de la Universidad Estatal de Ohio y Profesor Clínico asistencial de la Universidad del Sur de Florida, Tampa, Fl.
+                                            </p>
+                                    </div>
+                                    <div class="profile__info text-center">
+                                        <div class="profile__info-img" style="background-image: url('img/conferencistas2019/dr_gonzalo_hagerman.png')"></div>
+                                        <h5>Dr Gonzalo Hagerman Galindo, Méjico</h5>
+                                        <p>Medicina en la Universidad La Salle. Residencia y Especialidad en Cirugía General (Hospital Central Militar). Asociado Decanini y Asociados (The American British Cowdray Medical Center)
+                                            Asociado-Post Doctoral (Department of Surgery University of Minnesota)
+                                            Colon & Rectal Fellowship Division of Colon and Rectal Surgery Department of Surger University of Minnesota.
+                                            
+                                            </p>
                                     </div>
                                 </div>
 
