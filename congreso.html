@@ -190,7 +190,7 @@
             </div>
         </div>
         <hr>
-        <div class="row">
+        <!--div class="row">
             <div class="col-lg-12 text-center">
                 <h4>Guatem&aacute;gica</h4>
             </div>
@@ -201,7 +201,7 @@
                     <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/9jJC5jDzbCE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
-        </div>
+        </div-->
     </section>
 
     <!-- Hospedaje Section -->
@@ -477,31 +477,32 @@
                                 <label for="category"><span class="glyphicon glyphicon-th-list"></span>  Categoria que cancela</label>
                                 <select class="form-control" id="category" name="category" required data-validation-required-message="Seleccione la categoria correcta.">
                                     <option value="">-- Seleccione una opci&oacute;n --</option>
-                                    <option value="MEDICOS SOCIOS (Paquete Académico y Social)">MEDICOS SOCIOS (Paquete Académico y Social)</option>
-                                    <option value="MEDICOS NO SOCIOS (Paquete Académico y Social)">MEDICOS NO SOCIOS (Paquete Académico y Social)</option>
-                                    <option value="MEDICOS NO SOCIOS (Paquete Académico)">MEDICOS NO SOCIOS (Paquete Académico)</option>
-                                    <option value="RESIDENTES CON CARNE (Paquete Académico)">RESIDENTES CON CARNE (Paquete Académico)</option>
-                                    <option value="ESTUDIANTES CON CARNE (Paquete Académico)">ESTUDIANTES CON CARNE (Paquete Académico)</option>
-                                    <option value="ACOMPAÑANTES DE MEDICOS">ACOMPAÑANTES DE MEDICOS</option>
-                                    <option value="MEDICOS SOLO UN DIA (Paquete Académico)">MEDICOS SOLO UN DIA (Paquete Académico)</option>
+                                    <option value="MEDICOS SOCIOS (Académico y Social)">MEDICOS SOCIOS (Académico y Social)</option>
+                                    <option value="MEDICOS NO SOCIOS (Académico y Social)">MEDICOS NO SOCIOS (Académico y Social)</option>
+                                    <option value="MEDICOS NO SOCIOS (sólo Académico)">MEDICOS NO SOCIOS (sólo Académico)</option>
+                                    <option value="RESIDENTES CON CARNE (sólo Académico)">RESIDENTES CON CARNE (sólo Académico)</option>
+                                    <option value="ESTUDIANTES CON CARNE (sólo Académico)">ESTUDIANTES CON CARNE (sólo Académico)</option>                                    
+                                    <option value="MEDICOS SOLO UN DIA (sólo Académico)">MEDICOS SOLO UN DIA (sólo Académico)</option>
                                     <option value="ENTRADA A NOCHE CULTURAL Y CENA DE GALA">ENTRADA A NOCHE CULTURAL Y CENA DE GALA</option>
                                 </select>
                                 <p class="help-block text-danger"></p>
                             </div>
-                        </div>
 
-                        <div class="form-group js-document">
                             <div class="col-md-6 control-group">
                                 <label for="docNumber"><span class="glyphicon glyphicon-book"></span> No. Colegiado / Carn&eacute;</label>
                                 <input type="text" class="form-control" id="docNumber" name="docNumber" placeholder="Ingrese numero de documento" required data-validation-required-message="Por favor ingrese el No. de documento.">
                                 <p class="help-block text-danger"></p>
                             </div>
+                        </div>
+
+                        <!--div class="form-group js-document">
+                            
                             <div class="col-md-6 control-group hidden">
                                 <label for="document"><span class="glyphicon glyphicon-file"></span>  Copia de Carn&eacute;</label>
                                 <input type="file" class="form-control" accept="pdf|image/*" id="document" name="document" required data-validation-required-message="Por favor seleccione un documento valido.">
                                 <p class="help-block text-danger"></p>
                             </div>
-                        </div>
+                        </div-->
 
                         <div class="form-group">
                             <div class="col-md-6 control-group">
@@ -525,6 +526,9 @@
                                 <div class="col-md-6">
                                     <button style="margin-top: 5px;" type="reset" onclick="$(this).closest('form').find('.help-block').hide()" class="btn btn-danger btn-block"><span class="glyphicon glyphicon-remove"></span> Cancelar</button>
                                 </div>
+                            </div>
+                            <div class="col-md-offset-2 col-md-8">
+                                Mayor información escribirnos a <a href="https://accrg.net/#contact">www.accrg.net</a>
                             </div>
                         </div>
                     </form>
