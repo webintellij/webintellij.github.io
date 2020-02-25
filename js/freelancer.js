@@ -216,7 +216,7 @@ var miemborsHonorarios = [
     {"type":"MIEMBRO HONORARIO","name":"Jose", "lastName": "Guillem", "description":"", "pic":"img/conferencistas2019/dr_jose_guillem.png", "title":"Dr."},
     {"type":"MIEMBRO HONORARIO","name":"Jorge Latif", "lastName": "Valdez Vásquez", "description":"", "pic":"img/conferencistas2019/dr_jorge_latif.jpg", "title":"Dr."},
     {"type":"MIEMBRO HONORARIO","name":"Rogelio", "lastName": "Morales Cattani", "description":"", "pic":"img/conferencistas2019/dr_regelio_morales.png", "title":"Dr."},
-    {"type":"MIEMBRO HONORARIO","name":"Miguel Angel", "lastName": "Mercado", "description":"", "pic":"img/conferencistas2019/dr_miguel_mercado.png'", "title":"Dr."},
+    {"type":"MIEMBRO HONORARIO","name":"Miguel Angel", "lastName": "Mercado", "description":"", "pic":"img/conferencistas2019/dr_miguel_mercado.png", "title":"Dr."},
     {"type":"MIEMBRO HONORARIO","name":"Feza", "lastName": "Remsi", "description":"", "pic":"img/conferencistas2019/dr_feza_remsi.png", "title":"Dr."}
 ];
 
