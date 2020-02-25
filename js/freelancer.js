@@ -163,7 +163,7 @@ var coloproctologos = [
     {"type":"COLOPROCTOLOGO","name":"Aldo", "lastName": "Calderón Contreras", "description":"6a. Calle 13-52, Zona 3 Edificio Los Altos Quetzaltenango", "tel":"7767-4607/46", "email":"aldojcalderon@yahoo.com", "pic":"img/members/tab1/img12.jpg", "title":"Dr."},
     {"type":"COLOPROCTOLOGO","name":"Raúl Alejandro", "lastName": "Morales López", "description":"13 Ave. 6-51, Zona 2 Quetzaltenango", "tel":"7765-5124", "email":"ralemora@gmail.com", "pic":"img/members/tab1/img13.jpg", "title":"Dr."},
     {"type":"COLOPROCTOLOGO","name":"Carlos", "lastName": "Parellada Cuadrado", "description":"6a. Ave. 3-22 Zona 10 Edifício Centro Mèdico II Of. 705 Ciudad Guatemala", "tel":"2331-7673 / 2331-7686", "email":"carlosparellada@gmail.com", "pic":"img/members/tab1/Dr. Carlos Parellada.jpg", "title":"Dr."},
-    {"type":"COLOPROCTOLOGO","name":"Julio Rafael", "lastName": "Pineda Sagastume", "description":"7a. Calle 3-57 Zona 1 Ciudad, Guatemala", "tel":"2232-4929", "email":"jrpineda@gmail.com", "pic":"img/members/tab1/img15.jpg", "title":"Dr."},
+    //{"type":"COLOPROCTOLOGO","name":"Julio Rafael", "lastName": "Pineda Sagastume", "description":"7a. Calle 3-57 Zona 1 Ciudad, Guatemala", "tel":"2232-4929", "email":"jrpineda@gmail.com", "pic":"img/members/tab1/img15.jpg", "title":"Dr."},
     {"type":"COLOPROCTOLOGO","name":"Jorge S.J.", "lastName": "Gómez", "description":"", "tel":"3015-0077", "email":"drsanjose@gmail.com", "pic":"img/members/tab1/Dr. Jorge San José.jpg", "title":"Dr."},
     {"type":"COLOPROCTOLOGO","name":"Rafael", "lastName": "Pivaral Martínez", "description":"Avenida Las Américas 21-69, Zona 10 Edificio Medico Obelisco Nivel 9 Of, Ciudad Guatemala", "tel":"2337-3376", "email":"rafapima@yahoo.com.mx", "pic":"img/members/tab1/img17.jpg", "title":"Dr."},
     //{"type":"COLOPROCTOLOGO","name":"Eduardo Quiñónez Azmitia", "lastName": "", "description":"9a. Ave. 2-33, Zona 1 Centro Gastrointestinal Oriente Chiquimula", "tel":"7942-4946", "email":"edy3424@yahoo.com.mx", "pic":"img/members/tab1/img18.jpg", "title":"Dr."},
@@ -201,14 +201,23 @@ var memoriam = [
     {"type":"","name":"Carlos ", "lastName": "Escobar", "description":"", "pic":"img/members/memoriam/dr_carlos_escobar.jpg", "title":"Dr."},
     {"type":"","name":"Rigoberto ", "lastName": "Pellecer", "description":"", "pic":"img/members/memoriam/dr_rigoberto_pellecer.jpg", "title":"Dr."},
     {"type":"","name":"Eduardo ", "lastName": "Qui&ntilde;onez", "description":"", "pic":"img/members/memoriam/dr_eduardo_quinonez.jpeg", "title":"Dr."},
-    {"type":"","name":"Brenda ", "lastName": "Escobar", "description":"", "pic":"img/members/memoriam/dra_brenda_escobar_ulloa.jpg", "title":"Dra."}
+    {"type":"","name":"Brenda ", "lastName": "Escobar", "description":"", "pic":"img/members/memoriam/dra_brenda_escobar_ulloa.jpg", "title":"Dra."},
+    {"type":"","name":"Julio", "lastName": "Pineda", "description":"", "pic":"img/members/honorarios/dr_julio_pineda.jpg", "title":"Dr."},
 ]
 
 var miemborsHonorarios = [
     {"type":"MIEMBRO HONORARIO","name":"Peter", "lastName": "Sagar (UK)", "description":"", "pic":"img/members/honorarios/dr_peter_sagar.jpg", "title":"Dr."},
     {"type":"MIEMBRO HONORARIO","name":"Julio", "lastName": "Garc&iacute;a-Aguilar (USA)", "description":"", "pic":"img/members/honorarios/dr_julio_garcia-aguilar.jpg", "title":"Dr."},
-    {"type":"MIEMBRO HONORARIO","name":"Julio", "lastName": "Pineda", "description":"", "pic":"img/members/honorarios/dr_julio_pineda.jpg", "title":"Dr."},
-    {"type":"MIEMBRO HONORARIO","name":"Mario", "lastName": "Hernandez", "description":"", "pic":"img/members/tab1/Dr. Mario Ramiro Hernández Chavez.jpg", "title":"Dr."}
+    //{"type":"MIEMBRO HONORARIO","name":"Julio", "lastName": "Pineda", "description":"", "pic":"img/members/honorarios/dr_julio_pineda.jpg", "title":"Dr."},
+    {"type":"MIEMBRO HONORARIO","name":"Mario", "lastName": "Hernandez", "description":"", "pic":"img/members/tab1/Dr. Mario Ramiro Hernández Chavez.jpg", "title":"Dr."},
+    {"type":"MIEMBRO HONORARIO","name":"Eduardo", "lastName": "García Escobar", "description":"", "pic":"img/members/tab1/Dr. Eduardo García Escobar.jpg", "title":"Dr."},
+    {"type":"MIEMBRO HONORARIO","name":"Víctor H.", "lastName": "Valdez Vásquez", "description":"", "pic":"img/members/tab1/Dr. Víctor Valdez.jpg", "title":"Dr."},
+    {"type":"MIEMBRO HONORARIO","name":"Antonio", "lastName": " Lacy Fortuny", "description":"", "pic":"img/conferencistas2019/dr_antonio_lacy.png", "title":"Dr."},
+    {"type":"MIEMBRO HONORARIO","name":"Jose", "lastName": "Guillem", "description":"", "pic":"img/conferencistas2019/dr_jose_guillem.png", "title":"Dr."},
+    {"type":"MIEMBRO HONORARIO","name":"Jorge Latif", "lastName": "Valdez Vásquez", "description":"", "pic":"img/conferencistas2019/dr_jorge_latif.jpg", "title":"Dr."},
+    {"type":"MIEMBRO HONORARIO","name":"Rogelio", "lastName": "Morales Cattani", "description":"", "pic":"img/conferencistas2019/dr_regelio_morales.png", "title":"Dr."},
+    {"type":"MIEMBRO HONORARIO","name":"Miguel Angel", "lastName": "Mercado", "description":"", "pic":"img/conferencistas2019/dr_miguel_mercado.png'", "title":"Dr."},
+    {"type":"MIEMBRO HONORARIO","name":"Feza", "lastName": "Remsi", "description":"", "pic":"img/conferencistas2019/dr_feza_remsi.png", "title":"Dr."}
 ];
 
 var multimedia = [ 
