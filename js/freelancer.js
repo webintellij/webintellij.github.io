@@ -189,11 +189,13 @@ var miembros = [
     //{"type":"MIEMBRO ADHERENTE","name":"Brenda", "lastName": "Escobar Ulloa", "description":"6a Ave. 7-66 Zona 10 Condominio Medico Oficina E-1 Ciudad, Guatemala", "tel":"2331-5633 / 2362-9753", "email":"cleoescobarulloa@gmail.com", "pic":"img/members/tab3/img1.jpg", "title":"Dra."},
     {"type":"MIEMBRO ADHERENTE","name":"Gladys", "lastName": "Monroy Escobar", "description":"14 Ave. 7-12 Zona 14 Edificio Empresarial La Villa Of. 18 Ciudad, Guatemala", "tel":"24160-6500", "email":"monroygime@hotmail.com", "pic":"img/members/tab1/Dra. Gladys Monroy.jpg", "title":"Dra."},
     {"type":"MIEMBRO ADHERENTE","name":"Miguel Ángel", "lastName": "Ortega", "description":"3a. Calle 10-71 Zona 15 Interior Hospital El Pilar Clínica de Radioterapia La Asunción Ciudad, Guatemala", "tel":"2420-0000 Ext. 8320", "email":"info@rla.com.gt", "pic":"img/members/tab3/img2.jpg", "title":"Dr."},
-    {"type":"MIEMBRO ADHERENTE","name":"Jaime", "lastName": "Álvarez", "description":"", "tel":"41502131", "email":"jaimealv@hotmail.es", "pic":"img/members/tab3/img3.jpg", "title":"Dr."}
+    //{"type":"MIEMBRO ADHERENTE","name":"Jaime", "lastName": "Álvarez", "description":"", "tel":"41502131", "email":"jaimealv@hotmail.es", "pic":"img/members/tab3/img3.jpg", "title":"Dr."}
+    {"type":"MIEMBRO ADHERENTE","name":"Herman", "lastName": "De Matta", "description":"", "tel":"", "email":"", "pic":"img/members/tab3/hermanDeMatta.jpg", "title":"Dr."}
 ];
 
 var expresidentes = [
-    {"type":"Per&iacute;odo 2016-2018","name":"José Antonio", "lastName": "Perdomo Cuyún", "description":"2a. Calle 25-19 Zona 15 Vista Hermosa I Edificio Multimedica Of. 403 Ciudad, Guatemala", "tel":"2385-7863", "email":"antonio50287@yahoo.com ", "pic":"img/members/tab1/Dr. José Antonio Perdomo.jpg", "title":"Dr."},   
+    {"type":"Per&iacute;odo 2018-2022","name":"Julio C&eacute;sar", "lastName": "Morales Linares", "description":"4ta. avenida 15-73 zona 10 Oficina # 105 Edificio Clínicas Médicas zona 10. Ciudad de Guatemala.", "tel":"(502)  23373460 y 23373461", "email":"labryjcm@gmail.com", "pic":"img/members/tab1/Dr. Julio Morales.jpg", "title":"Dr."},
+    {"type":"Per&iacute;odo 2016-2018","name":"José Antonio", "lastName": "Perdomo Cuyún", "description":"2a. Calle 25-19 Zona 15 Vista Hermosa I Edificio Multimedica Of. 403 Ciudad, Guatemala", "tel":"2385-7863", "email":"antonio50287@yahoo.com ", "pic":"img/members/tab1/Dr. José Antonio Perdomo.jpg", "title":"Dr."},
 ];
 
 var memoriam = [
